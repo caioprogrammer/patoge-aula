@@ -516,7 +516,8 @@
                         mergeMenu: function () {
                             if (!s.mergeMenu) return !1;
                             var e = O;
-                            e.insertAfter(s.insertMenuAfter), D.departamentMenuFormat(e);
+                            e.insertAfter(s.insertMenuAfter), 
+                            D.departamentMenuFormat(e);
                         },
                         mergeMenuList: function () {
                             var e = 0;
@@ -546,7 +547,9 @@
                                                   var o = jQuery(this),
                                                       i = o.find("input").val() || "",
                                                       a = "sr_" + i.toLowerCase().replaceSpecialChars().replace(/\s/g, "-");
-                                                  (y.tmpCurrentLabel = { fieldsetParent: [e, n], elem: o }), (y[n][t.toString()] = { className: a, title: i }), o.addClass(a).attr({ title: i, index: t }), s.labelCallback(y);
+                                                  (y.tmpCurrentLabel = { fieldsetParent: [e, n], elem: o }), 
+                                                  (y[n][t.toString()] = { className: a, title: i }), o.addClass(a).attr({ title: i, index: t }), 
+                                                  s.labelCallback(y);
                                               }),
                                               y.fieldsetCount++);
                                 });

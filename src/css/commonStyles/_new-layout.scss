@@ -4855,3 +4855,16 @@ button {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+img[src=""] {
+    display: none !important;
+}
+
+.page-product .c-product__left-images, 
+.page-product .c-product__left-images #show {
+    max-width: 830px;
+    overflow: hidden;
+}
+.page-product .c-product__right {
+    width: 500px;
+}

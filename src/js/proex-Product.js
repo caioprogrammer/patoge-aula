@@ -3693,11 +3693,9 @@ PERFORMANCE OF THIS SOFTWARE.
                             t.openModal(), 
                             t.closeModal(), 
                             t.scrollbarTable();
+                            t.startCarouselAndSlick();
 
-                            // document.querySelectorAll(".page-product .c-product__left-images #show .thumbs li a img").forEach((e) => {
-                            //     e.getAttribute("src").replace("-85-129", "")
-                            //     e.getAttribute("data-src").replace("-85-129", "")
-                            // })
+                            
                         }, 500);
                 },
                 iconBreadcrumb: function () {
@@ -3705,6 +3703,26 @@ PERFORMANCE OF THIS SOFTWARE.
                     $(".c-breadcrumb li").each(function () {
                         $(this).append('<span class="divisoria">/</span>');
                     });
+                },
+                startCarouselAndSlick: function () {
+                    let str = '';
+                    document.querySelectorAll(".page-product .c-product__left-images #show .thumbs li:not(.slick-cloned) a img").forEach((e) => {
+                        if(e.getAttribute("src") == null) {
+                            return;
+                        } else {
+                            str += `<img src="${e.src.replace('-85-129','')}" />`
+                        }
+                    })
+                    document.querySelector('.page-product .c-product__left-images').innerHTML = str;
+
+                    setTimeout(() => {
+                        $('.c-product__left-images').slick({
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            vertical: false,
+                            infinite: true
+                        })
+                    }, 300);
                 },
                 sizeTable: function () {
                     const t = $(".c-product__left-images #image-main").attr("src"),
