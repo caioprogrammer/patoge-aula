@@ -1,7 +1,4 @@
-@import url(https://use.fontawesome.com/releases/v6.0.0/css/all.css);
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap);
-
-@font-face {
+@import url(https://use.fontawesome.com/releases/v6.0.0/css/all.css);@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap);@font-face {
     font-family: akzidenz-bold;
     src: url(https://patoge.vteximg.com.br/arquivos/akzidenz-grotesk-bq-bold-condensed.otf.css)
 }
@@ -47,6 +44,11 @@
     --microtip-font-weight: bold;
     --microtip-text-transform: uppercase
 }
+@media screen and (min-width: 1366px) {
+    .container {
+        width: 1320px;
+    } 
+}
 
 .container-header {
     display: none
@@ -90,9 +92,9 @@
     z-index: 2
 }
 
-@media (min-width:36em) {
+@media (min-width: 36em) {
     .c-cartHeader__list {
-        width: 600px
+        width:600px
     }
 }
 
@@ -109,7 +111,7 @@
     height: 10px;
     background-color: var(--color-white);
     border: 6px solid #dadada;
-    border-radius: 50%;
+    border-radius: 0;
     display: block
 }
 
@@ -122,9 +124,9 @@
     font-weight: 500
 }
 
-@media (min-width:36em) {
+@media (min-width: 36em) {
     .c-cartHeader__item small {
-        font-size: 11px;
+        font-size:11px;
         font-size: .6875rem;
         line-height: 22px;
         letter-spacing: 1px
@@ -136,8 +138,9 @@
 }
 
 .c-cartHeader__item.active span {
-    background-color: var(--color-white);
-    border: 6px solid var(--color-black)
+    background-color: var(--color-black);
+    border: 6px solid var(--color-white);
+    box-shadow: 0px 0px 2px #000000;
 }
 
 .c-cartHeader__item.active small {
@@ -155,9 +158,9 @@
     z-index: 1
 }
 
-@media (min-width:36em) {
+@media (min-width: 36em) {
     .c-cartHeader__progress {
-        width: 425px;
+        width:425px;
         left: 86px
     }
 }
@@ -177,16 +180,16 @@
 
 #nome-lojista span {
     padding: 15px 0;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat,sans-serif;
     font-size: 14px;
     font-size: .875rem;
     line-height: 16px;
     color: var(--color-black)
 }
 
-@media (min-width:36em) {
+@media (min-width: 36em) {
     #nome-lojista span {
-        font-size: 18px;
+        font-size:18px;
         font-size: 1.125rem;
         line-height: 20px
     }
@@ -215,7 +218,7 @@
 .modal-lojista {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0,0,0,.8);
     position: fixed;
     top: 0;
     left: 0;
@@ -245,9 +248,9 @@
     animation: modal .3s
 }
 
-@media (min-width:36em) {
+@media (min-width: 36em) {
     .modal-lojista__content {
-        padding: 30px 40px;
+        padding:30px 40px;
         width: 60%
     }
 }
@@ -261,9 +264,9 @@
     text-align: center
 }
 
-@media (min-width:36em) {
+@media (min-width: 36em) {
     .modal-lojista__title {
-        font-size: 24px;
+        font-size:24px;
         font-size: 1.5rem;
         line-height: 26px;
         font-weight: 600;
@@ -284,9 +287,9 @@
     cursor: pointer
 }
 
-@media (min-width:36em) {
+@media (min-width: 36em) {
     .modal-lojista__close:before {
-        color: var(--color-black);
+        color:var(--color-black);
         top: 10px
     }
 }
@@ -294,7 +297,7 @@
 @-webkit-keyframes modal {
     0% {
         opacity: 0;
-        transform: translate3d(0, -60px, 0)
+        transform: translate3d(0,-60px,0)
     }
 
     to {
@@ -306,7 +309,7 @@
 @keyframes modal {
     0% {
         opacity: 0;
-        transform: translate3d(0, -60px, 0)
+        transform: translate3d(0,-60px,0)
     }
 
     to {
@@ -316,7 +319,7 @@
 }
 
 #orderform-title {
-    display: none !important
+    display: none!important
 }
 
 .btn-info-lojista {
@@ -332,97 +335,64 @@
     color: var(--color-black)
 }
 
-.uneditable-input,
-input[type=color],
-input[type=date],
-input[type=datetime-local],
-input[type=datetime],
-input[type=email],
-input[type=month],
-input[type=number],
-input[type=password],
-input[type=search],
-input[type=tel],
-input[type=text],
-input[type=time],
-input[type=url],
-input[type=week] {
-    font-family: Montserrat, sans-serif !important;
-    box-shadow: none !important;
+.uneditable-input,input[type=color],input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week] {
+    font-family: Montserrat,sans-serif!important;
+    box-shadow: none!important;
     font-size: 14px;
     font-size: .875rem;
     line-height: 40px;
-    padding: 0 10px !important;
-    height: 40px !important;
-    border: 1px solid rgba(0, 0, 0, .2) !important;
-    border-radius: 0 !important
+    padding: 0 10px!important;
+    height: 40px!important;
+    border: 1px solid rgba(0,0,0,.2)!important;
+    border-radius: 0!important
 }
 
-.uneditable-input:focus,
-input[type=color]:focus,
-input[type=date]:focus,
-input[type=datetime-local]:focus,
-input[type=datetime]:focus,
-input[type=email]:focus,
-input[type=month]:focus,
-input[type=number]:focus,
-input[type=password]:focus,
-input[type=search]:focus,
-input[type=tel]:focus,
-input[type=text]:focus,
-input[type=time]:focus,
-input[type=url]:focus,
-input[type=week]:focus {
-    border-color: var(--color-black) !important
+.uneditable-input:focus,input[type=color]:focus,input[type=date]:focus,input[type=datetime-local]:focus,input[type=datetime]:focus,input[type=email]:focus,input[type=month]:focus,input[type=number]:focus,input[type=password]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=text]:focus,input[type=time]:focus,input[type=url]:focus,input[type=week]:focus {
+    border-color: var(--color-black)!important
 }
 
-input.error,
-input.required,
-input.required:focus,
-select.error,
-select.required,
-select.required:focus {
-    border-color: #dd4b39 !important
+input.error,input.required,input.required:focus,select.error,select.required,select.required:focus {
+    border-color: #dd4b39!important
 }
 
 .default-modal {
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    height: auto !important;
-    background-color: var(--color-black) !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    border-radius: 0 !important
+    top: 50%!important;
+    transform: translateY(-50%)!important;
+    height: auto!important;
+    background-color: var(--color-black)!important;
+    border: 0!important;
+    box-shadow: none!important;
+    border-radius: 0!important
 }
 
 .default-modal .identified-user-hello {
-    font-size: 20px !important;
-    line-height: 20px !important;
+    font-size: 20px!important;
+    line-height: 20px!important;
     text-align: center;
     margin-bottom: 10px;
-    width: auto !important
+    width: auto!important
 }
 
-@media (min-width:30.625em) {
+@media (min-width: 30.625em) {
     .default-modal .identified-user-hello {
-        font-size: 26px !important;
-        line-height: 26px !important;
+        font-size:26px!important;
+        line-height: 26px!important;
         text-align: left
     }
 }
 
 .default-modal .identified-user-message {
-    font-size: 13px !important;
-    line-height: 15px !important;
+    font-size: 13px!important;
+    line-height: 15px!important;
     text-align: center;
     margin-bottom: 10px;
-    width: auto !important
+    width: auto!important
 }
 
-@media (min-width:30.625em) {
+@media (min-width: 30.625em) {
     .default-modal .identified-user-message {
-        font-size: 14px !important;
-        line-height: 16px !important;
+        font-size:14px!important;
+        line-height: 16px!important;
         text-align: left
     }
 }
@@ -434,23 +404,23 @@ select.required:focus {
     margin-bottom: 15px
 }
 
-@media (min-width:30.625em) {
+@media (min-width: 30.625em) {
     .default-modal-security {
-        float: left;
+        float:left;
         margin-right: 20px;
         margin-bottom: 0
     }
 }
 
 .default-modal-body {
-    width: auto !important;
-    max-width: 530px !important
+    width: auto!important;
+    max-width: 530px!important
 }
 
 .default-modal #btn-identified-user-button {
     display: block;
     width: 100%;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat,sans-serif;
     font-size: 10px;
     font-size: .625rem;
     line-height: 34px;
@@ -466,54 +436,58 @@ select.required:focus {
     margin: 10px auto 0
 }
 
-@media (min-width:30.625em) {
+@media (min-width: 30.625em) {
     .default-modal #btn-identified-user-button {
-        margin: initial;
+        margin:initial;
         width: 220px
     }
 }
 
 .body-cart {
-    font-family: Montserrat, sans-serif
+    font-family: Montserrat,sans-serif
 }
 
 .body-cart .container-cart h1 {
-    display: none !important;
+    display: none!important;
     font-size: 0;
     line-height: 0;
-    color: var(--color-white) !important;
+    color: var(--color-white)!important;
     text-align: center
 }
 
 .body-cart .cart {
-    border: 0
+    border: 0;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    border-radius: 0;
 }
 
-@media (max-width:47.99875em) {
+@media (max-width: 47.99875em) {
     .body-cart .cart-items thead {
-        display: none
+        display:none
     }
 }
 
 .body-cart .cart-items thead tr {
-    border-bottom: 2px solid var(--color-black)
+    /* border-bottom: 2px solid #ff0000 */
 }
 
 .body-cart .cart-items thead th {
-    color: var(--color-black);
-    font-size: 12px;
-    font-size: .75rem;
-    line-height: 14px;
     text-transform: uppercase;
-    font-weight: 700
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    color: #151414;
 }
 
 .body-cart .cart-items thead th.quantity {
-    width: 110px !important
+    width: 110px!important
 }
 
 .body-cart .cart-items tbody .product-item {
-    border-bottom: 1px solid rgba(0, 0, 0, .05)
+    border-bottom: 1px solid rgba(0,0,0,.05)
 }
 
 .body-cart .cart-items tbody .product-image a {
@@ -521,19 +495,21 @@ select.required:focus {
 }
 
 .body-cart .cart-items tbody .product-image a img {
-    width: auto;
+    width: 100%;
     max-width: none;
-    height: 65px
+    height: unset 
+}
+.body-cart .cart-items tbody .product-image {
+    width: 85px;
 }
 
-.body-cart .cart-items tbody .product-name .brand,
-.body-cart .cart-items tbody .product-name .seller {
-    display: none !important
+.body-cart .cart-items tbody .product-name .brand,.body-cart .cart-items tbody .product-name .seller {
+    display: none!important
 }
 
-@media (max-width:47.99875em) {
+@media (max-width: 47.99875em) {
     .body-cart .cart-items tbody .product-name {
-        display: block;
+        display:block;
         margin-left: 0;
         text-align: left;
         line-height: 140%;
@@ -541,77 +517,83 @@ select.required:focus {
     }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
     .body-cart .cart-items tbody .product-name {
-        width: 200px
+        width:200px
     }
 }
 
-@media (min-width:62em) {
+@media (min-width: 62em) {
     .body-cart .cart-items tbody .product-name {
-        width: 350px
+        width:350px
     }
 }
 
-@media (min-width:75em) {
+@media (min-width: 75em) {
     .body-cart .cart-items tbody .product-name {
-        width: 420px
+        width:390px
     }
 }
 
 .body-cart .cart-items tbody .product-name a {
     display: block;
-    font-size: 12px;
-    font-size: .75rem;
-    line-height: 14px;
-    color: var(--color-black);
-    outline: 0
+    outline: 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #524E4E;
+    max-width: 390px;
 }
 
 .body-cart .cart-items tbody .shipping-date {
-    font-size: 12px;
-    font-size: .75rem;
-    line-height: 14px;
-    display: none
+    display: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #524E4E;
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
     .body-cart .cart-items tbody .shipping-date {
-        display: table-cell;
-        width: 70px
+        display:table-cell;
+        width: 80px
     }
 }
 
-@media (min-width:62em) {
+@media (min-width: 62em) {
     .body-cart .cart-items tbody .shipping-date {
-        width: 80px
+        width:100px
     }
 }
 
 .body-cart .cart-items tbody .product-price {
     display: table-cell;
-    float: left !important;
-    text-align: left !important;
+    float: left!important;
+    text-align: left!important;
     margin-left: 60px;
     width: 85px
 }
 
-@media (min-width:30.625em) {
+@media (min-width: 30.625em) {
     .body-cart .cart-items tbody .product-price {
-        margin-left: 0;
-        width: 110px !important
+        margin-left:0;
+        width: 110px!important
     }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
     .body-cart .cart-items tbody .product-price {
-        float: none !important;
-        text-align: center !important
+        float:none!important;
+        text-align: center!important
     }
 }
 
-.body-cart .cart-items tbody .product-price .new-product-price-label,
-.body-cart .cart-items tbody .product-price .old-product-price-label {
+.body-cart .cart-items tbody .product-price .new-product-price-label,.body-cart .cart-items tbody .product-price .old-product-price-label {
     display: none
 }
 
@@ -622,10 +604,11 @@ select.required:focus {
 }
 
 .body-cart .cart-items tbody .product-price .new-product-price {
-    font-size: 14px;
-    font-size: .875rem;
-    line-height: 14px;
-    font-weight: 600
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #151414;
 }
 
 .body-cart .cart-items tbody .product-price .price-details-icon {
@@ -642,25 +625,25 @@ select.required:focus {
 }
 
 .body-cart .cart-items tbody .quantity {
-    width: 110px !important;
+    width: 110px!important;
     position: relative
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     .body-cart .cart-items tbody .quantity {
-        margin-left: 0 !important
+        margin-left:0!important
     }
 }
 
-@media (min-width:30.625em) {
+@media (min-width: 30.625em) {
     .body-cart .cart-items tbody .quantity {
-        display: inline-flex !important
+        display:inline-flex!important
     }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
     .body-cart .cart-items tbody .quantity {
-        display: table-cell !important
+        display:table-cell!important
     }
 }
 
@@ -673,7 +656,8 @@ select.required:focus {
     justify-content: center;
     top: 50%;
     transform: translateY(-50%);
-    left: auto
+    left: auto;
+    color: #fff;
 }
 
 .body-cart .cart-items tbody .quantity a:hover {
@@ -684,9 +668,9 @@ select.required:focus {
     left: 7px
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     .body-cart .cart-items tbody .quantity a.item-quantity-change-decrement {
-        left: 0;
+        left:0;
         padding: 0
     }
 }
@@ -695,9 +679,9 @@ select.required:focus {
     right: 7px
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     .body-cart .cart-items tbody .quantity a.item-quantity-change-increment {
-        right: 0;
+        right:0;
         padding: 0
     }
 }
@@ -706,7 +690,9 @@ select.required:focus {
     width: 20px;
     font-size: 20px;
     font-size: 1.25rem;
-    line-height: 20px
+    line-height: 20px;
+    color: #000;
+    border: 0;
 }
 
 .body-cart .cart-items tbody .quantity i:hover {
@@ -714,33 +700,40 @@ select.required:focus {
 }
 
 .body-cart .cart-items tbody .quantity input {
-    padding: 0 !important;
-    width: 25px !important
+    padding: 0!important;
+    width: 100%!important;
+    border: 0 !important;
+    border-bottom: 1px solid #000 !important;
 }
 
-@media (max-width:47.99875em) {
+@media (max-width: 47.99875em) {
     .body-cart .cart-items tbody .quantity input {
-        margin-left: 42px !important
+        margin-left:42px!important
     }
 }
 
-@media (max-width:47.99875em) {
+@media (max-width: 47.99875em) {
     .body-cart .cart-items tbody .quantity-price {
-        float: right;
-        width: auto !important;
-        display: flex !important;
+        float:right;
+        width: auto!important;
+        display: flex!important;
         align-items: flex-end;
         height: 40px
     }
 }
 
 .body-cart .cart-items tbody .quantity-price .total-selling-price {
-    position: relative
+    position: relative;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #151414;
 }
 
-@media (max-width:47.99875em) {
+@media (max-width: 47.99875em) {
     .body-cart .cart-items tbody .quantity-price .total-selling-price:before {
-        content: "Total";
+        content:"Total";
         text-transform: uppercase;
         font-weight: 700;
         position: absolute;
@@ -749,15 +742,15 @@ select.required:focus {
     }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
     .body-cart .cart-items tbody .quantity-price {
-        display: table-cell !important
+        display:table-cell!important
     }
 }
 
-@media (max-width:47.99875em) {
+@media (max-width: 47.99875em) {
     .body-cart .cart-items tbody .item-remove {
-        position: absolute;
+        position:absolute;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -768,8 +761,8 @@ select.required:focus {
     }
 
     .body-cart .cart-items tbody .item-remove .item-link-remove {
-        width: 30px !important;
-        height: 30px !important;
+        width: 30px!important;
+        height: 30px!important;
         display: flex;
         align-items: center;
         justify-content: flex-end
@@ -795,23 +788,23 @@ select.required:focus {
 }
 
 .body-cart .coupon-fieldset>div {
-    display: block !important
+    display: block!important
 }
 
 .body-cart .coupon-data {
-    display: none !important
+    display: none!important
 }
 
 .body-cart .coupon-value {
     width: calc(100% - 25px);
     height: 40px;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat,sans-serif;
     font-size: 14px;
     font-size: .875rem;
     line-height: 16px;
     letter-spacing: 2px;
     font-weight: 600;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0,0,0,.1);
     border-radius: 0;
     color: var(--color-black);
     text-transform: uppercase;
@@ -821,7 +814,7 @@ select.required:focus {
 
 .body-cart .coupon-value:focus {
     border-color: var(--color-black);
-    box-shadow: 0 0 8px rgba(0, 0, 0, .6)
+    box-shadow: 0 0 8px rgba(0,0,0,.6)
 }
 
 .body-cart .coupon-value::-moz-placeholder {
@@ -844,9 +837,8 @@ select.required:focus {
     color: var(--color-gray-clean)
 }
 
-.body-cart #cart-coupon-add,
-.body-cart #shipping-calculate-link {
-    font-family: Montserrat, sans-serif;
+.body-cart #cart-coupon-add,.body-cart #shipping-calculate-link {
+    font-family: Montserrat,sans-serif;
     font-size: 12px;
     font-size: .75rem;
     line-height: 14px;
@@ -878,17 +870,17 @@ select.required:focus {
     width: 350px
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     .body-cart .box-lojista {
-        position: relative;
+        position:relative;
         flex-direction: column;
         width: 100%
     }
 }
 
 .body-cart .box-lojista #pesquisa-lojista {
-    border: 1px solid rgba(0, 0, 0, .2);
-    font-family: Montserrat, sans-serif !important;
+    border: 1px solid rgba(0,0,0,.2);
+    font-family: Montserrat,sans-serif!important;
     padding: 0 10px;
     line-height: 40px;
     border-radius: 0;
@@ -897,9 +889,9 @@ select.required:focus {
     width: 100%
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     .body-cart .box-lojista #pesquisa-lojista {
-        width: 100%;
+        width:100%;
         box-sizing: border-box
     }
 }
@@ -924,20 +916,17 @@ select.required:focus {
     font-weight: 500
 }
 
-.body-cart .box-lojista #pesquisa-lojista:-internal-autofill-selected,
-.body-cart .box-lojista #pesquisa-lojista:focus,
-.body-cart .box-lojista #pesquisa-lojista:focus-visible {
+.body-cart .box-lojista #pesquisa-lojista:-internal-autofill-selected,.body-cart .box-lojista #pesquisa-lojista:focus,.body-cart .box-lojista #pesquisa-lojista:focus-visible {
     outline: 0;
-    background-color: var(--color-white) !important;
+    background-color: var(--color-white)!important;
     box-shadow: 0 0 0 30px var(--color-white) inset
 }
 
-.body-cart .box-lojista .btn-confirmar-lojista,
-.body-cart .box-lojista .btn-pesquisar-lojista {
+.body-cart .box-lojista .btn-confirmar-lojista,.body-cart .box-lojista .btn-pesquisar-lojista {
     background: var(--color-black);
     color: var(--color-white);
     text-transform: uppercase;
-    font-family: Montserrat, sans-serif !important;
+    font-family: Montserrat,sans-serif!important;
     padding: 0 15px;
     font-size: 12px;
     font-size: .75rem;
@@ -951,16 +940,13 @@ select.required:focus {
     right: 3px
 }
 
-.body-cart .box-lojista .btn-confirmar-lojista:focus,
-.body-cart .box-lojista .btn-pesquisar-lojista:focus {
+.body-cart .box-lojista .btn-confirmar-lojista:focus,.body-cart .box-lojista .btn-pesquisar-lojista:focus {
     outline: 0
 }
 
-@media (max-width:35.99875em) {
-
-    .body-cart .box-lojista .btn-confirmar-lojista,
-    .body-cart .box-lojista .btn-pesquisar-lojista {
-        margin-top: 10px;
+@media (max-width: 35.99875em) {
+    .body-cart .box-lojista .btn-confirmar-lojista,.body-cart .box-lojista .btn-pesquisar-lojista {
+        margin-top:10px;
         width: 100%
     }
 }
@@ -969,9 +955,9 @@ select.required:focus {
     margin-top: 10px
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     .body-cart .select-lojista {
-        width: 100%
+        width:100%
     }
 }
 
@@ -984,16 +970,16 @@ select.required:focus {
     color: var(--color-black)
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     .body-cart .selectLojista {
-        width: 100%;
+        width:100%;
         margin-top: 20px
     }
 }
 
-@media (max-width:47.99875em) {
+@media (max-width: 47.99875em) {
     .body-cart #shipping-preview-container {
-        margin: 0 auto;
+        margin:0 auto;
         width: 100%
     }
 }
@@ -1008,11 +994,9 @@ select.required:focus {
     color: var(--color-black)
 }
 
-@media (max-width:47.99875em) {
-
-    .body-cart #shipping-preview-container .srp-delivery-header,
-    .body-cart #shipping-preview-container h2 {
-        text-align: center
+@media (max-width: 47.99875em) {
+    .body-cart #shipping-preview-container .srp-delivery-header,.body-cart #shipping-preview-container h2 {
+        text-align:center
     }
 }
 
@@ -1024,14 +1008,13 @@ select.required:focus {
     text-shadow: none
 }
 
-.body-cart #shipping-preview-container .srp-address-title,
-.body-cart #shipping-preview-container label {
-    color: var(--color-black) !important;
+.body-cart #shipping-preview-container .srp-address-title,.body-cart #shipping-preview-container label {
+    color: var(--color-black)!important;
     font-weight: 600
 }
 
 .body-cart #shipping-preview-container .srp-icon-arrow-down g {
-    fill: var(--color-black) !important
+    fill: var(--color-black)!important
 }
 
 .body-cart #shipping-preview-container #find-pickup-link {
@@ -1041,10 +1024,10 @@ select.required:focus {
     font-size: .75rem;
     line-height: 40px;
     height: 40px;
-    background-color: var(--color-black) !important;
+    background-color: var(--color-black)!important;
     color: var(--color-white);
     border-radius: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat,sans-serif;
     letter-spacing: 1px;
     border: 0
 }
@@ -1093,10 +1076,10 @@ select.required:focus {
     font-size: .75rem;
     line-height: 35px;
     height: 35px;
-    background-color: var(--color-black) !important;
-    color: var(--color-white) !important;
+    background-color: var(--color-black)!important;
+    color: var(--color-white)!important;
     border-radius: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat,sans-serif;
     padding: 0 15px;
     letter-spacing: 1px;
     border: 0;
@@ -1104,7 +1087,7 @@ select.required:focus {
 }
 
 .body-cart #shipping-preview-container .srp-postal-code__form small a {
-    color: var(--color-black) !important;
+    color: var(--color-black)!important;
     font-weight: 600
 }
 
@@ -1156,21 +1139,40 @@ select.required:focus {
 .body-cart .summary-coupon #cart-coupon-remove:visited {
     text-decoration: none
 }
-
+.body-cart .link-choose-more-products-wrapper {
+    text-align: center;
+    margin-top: 15px;
+}
 .body-cart .link-choose-more-products {
-    color: var(--color-black)
+    color: var(--color-black);
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 17px;
+    font-style: normal;
+    text-align: left;
+    color: #151414;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .body-cart .cart-totalizers {
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0,0,0,.1);
     border-radius: 0
 }
 
 .body-cart .accordion-group .table .info {
-    font-weight: 600;
     display: flex;
     align-items: center;
-    justify-content: flex-end
+    justify-content: flex-start;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #151414;
+}
+.body-cart .accordion-group .table .info[data-i18n="global.total"] {
+    font-weight: 700;
 }
 
 .body-cart .accordion-group .table .info:after {
@@ -1180,43 +1182,47 @@ select.required:focus {
 .body-cart .accordion-group .table .monetary {
     display: flex;
     align-items: center;
-    width: -webkit-max-content;
     width: -moz-max-content;
-    width: max-content
+    width: 100%;
+    justify-content: flex-end;
 }
-
+.body-cart .accordion-group .table .monetary:last-of-type {
+    font-weight: 700;
+}
 .body-cart .accordion-group .table .empty {
     width: 0
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     .body-cart .cart-links-bottom {
-        text-align: center;
+        text-align:center;
         margin-top: 20px
     }
 }
 
 .body-cart .btn-place-order {
     display: inline-block;
-    background: var(--color-buy);
-    color: var(--color-white);
+    background: #151414;
     text-transform: uppercase;
-    font-family: Montserrat, sans-serif !important;
-    padding: 0 15px;
-    font-size: 12px;
-    font-size: .75rem;
-    line-height: 35px;
-    height: 35px;
-    letter-spacing: 2.4px;
-    font-weight: 600;
-    border: 1px solid var(--color-buy);
+    font-family: Montserrat,sans-serif!important;
+    /* padding: 0 15px; */
+    height: 40px;
+    border: 1px solid #151414;
     border-radius: 0;
-    transition: all .3s ease-in-out
+    transition: all .3s ease-in-out;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    width: 100%;
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     .body-cart .btn-place-order {
-        position: fixed;
+        position:fixed;
         width: calc(100% - 32px);
         font-size: 12px;
         font-size: .75rem;
@@ -1238,7 +1244,7 @@ select.required:focus {
 }
 
 .body-order-form {
-    font-family: Montserrat, sans-serif
+    font-family: Montserrat,sans-serif
 }
 
 .body-order-form #orderform-to-cart {
@@ -1269,7 +1275,7 @@ select.required:focus {
     position: absolute;
     top: 3px;
     right: 3px;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat,sans-serif;
     display: block;
     font-size: 12px;
     font-size: .75rem;
@@ -1285,30 +1291,37 @@ select.required:focus {
 }
 
 .body-order-form .link-logout {
-    color: var(--color-black) !important
+    color: var(--color-black)!important
 }
 
 .body-order-form #is-corporate-client {
     display: flex;
     align-items: center;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat,sans-serif;
     font-size: 10px;
     font-size: .625rem;
     line-height: 12px;
     letter-spacing: 1px;
     height: 35px;
-    background-color: var(--color-black);
-    color: var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-black);
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 0;
-    padding: 0 15px;
+    /* padding: 0 20px; */
     outline: 0;
-    border: 0
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    max-width: 420px;
+}
+.client-profile-data ul {
+    width: 100%;
 }
 
 .body-order-form #is-corporate-client:hover {
-    text-decoration: none !important
+    text-decoration: none!important
 }
 
 .body-order-form #not-corporate-client {
@@ -1348,46 +1361,36 @@ select.required:focus {
     text-decoration: none
 }
 
-.body-order-form .newsletter,
-.body-order-form .save-data {
+.body-order-form .newsletter,.body-order-form .save-data {
     margin: 10px 0 20px
 }
 
-.body-order-form #btn-go-to-payment,
-.body-order-form #go-to-payment,
-.body-order-form #go-to-shipping,
-.body-order-form .ask-for-geolocation-cta button {
+.body-order-form #btn-go-to-payment,.body-order-form #go-to-payment,.body-order-form #go-to-shipping,.body-order-form .ask-for-geolocation-cta button {
     width: 100%;
     align-items: center;
     justify-content: center;
-    background: var(--color-buy);
+    background: var(--color-black);
     color: var(--color-white);
     text-transform: uppercase;
-    font-family: Montserrat, sans-serif !important;
+    font-family: Montserrat,sans-serif!important;
     padding: 0 15px;
     font-size: 10px;
-    font-size: .625rem;
+    font-size: 1rem;
     line-height: 40px;
     height: 40px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    border: 0 !important;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    border: 0!important;
     border-radius: 0;
     transition: all .3s ease-in-out;
-    margin-bottom: 5px
+    margin-bottom: 5px;
 }
 
-.body-order-form #btn-go-to-payment:focus,
-.body-order-form #go-to-payment:focus,
-.body-order-form #go-to-shipping:focus,
-.body-order-form .ask-for-geolocation-cta button:focus {
+.body-order-form #btn-go-to-payment:focus,.body-order-form #go-to-payment:focus,.body-order-form #go-to-shipping:focus,.body-order-form .ask-for-geolocation-cta button:focus {
     outline: 0
 }
 
-.body-order-form #btn-go-to-payment:hover,
-.body-order-form #go-to-payment:hover,
-.body-order-form #go-to-shipping:hover,
-.body-order-form .ask-for-geolocation-cta button:hover {
+.body-order-form #btn-go-to-payment:hover,.body-order-form #go-to-payment:hover,.body-order-form #go-to-shipping:hover,.body-order-form .ask-for-geolocation-cta button:hover {
     text-decoration: none;
     opacity: .9
 }
@@ -1397,39 +1400,30 @@ select.required:focus {
     fill: var(--color-black)
 }
 
-.icon-edit:before,
-.icon-question-sign:before {
+.icon-edit:before,.icon-question-sign:before {
     color: var(--color-black)
 }
 
-.vtex-omnishipping-1-x-active,
-.vtex-omnishipping-1-x-addressItemOption:hover,
-.vtex-omnishipping-1-x-leanShippingOptionActive,
-.vtex-omnishipping-1-x-option:hover {
-    background: var(--color-silver-dark) !important
+.vtex-omnishipping-1-x-active,.vtex-omnishipping-1-x-addressItemOption:hover,.vtex-omnishipping-1-x-leanShippingOptionActive,.vtex-omnishipping-1-x-option:hover {
+    background: var(--color-silver-dark)!important
 }
 
 .vtex-omnishipping-1-x-svg path {
-    fill: var(--color-black) !important
+    fill: var(--color-black)!important
 }
 
-.ChangeNumberOfPayment a,
-.ship-postalCode a,
-.vtex-omnishipping-1-x-linkEdit {
-    color: var(--color-black) !important
+.ChangeNumberOfPayment a,.ship-postalCode a,.vtex-omnishipping-1-x-linkEdit {
+    color: var(--color-black)!important
 }
 
-.vtex-omnishipping-1-x-backToAddressList,
-.vtex-omnishipping-1-x-buttonCreateAddress,
-.vtex-omnishipping-1-x-buttonEditAddress,
-.vtex-omnishipping-1-x-summaryChange {
-    border-color: var(--color-black) !important;
-    color: var(--color-black) !important
+.vtex-omnishipping-1-x-backToAddressList,.vtex-omnishipping-1-x-buttonCreateAddress,.vtex-omnishipping-1-x-buttonEditAddress,.vtex-omnishipping-1-x-summaryChange {
+    border-color: var(--color-black)!important;
+    color: var(--color-black)!important
 }
 
 .vtex-omnishipping-1-x-deliveryChannelsToggle {
-    background-color: var(--color-black) !important;
-    border-color: var(--color-black) !important
+    background-color: var(--color-black)!important;
+    border-color: var(--color-black)!important
 }
 
 .vtex-omnishipping-1-x-addressSummaryActive .address-summary {
@@ -1438,17 +1432,17 @@ select.required:focus {
 }
 
 #vtexIdContainer {
-    position: fixed !important;
-    height: 100vh !important;
+    position: fixed!important;
+    height: 100vh!important;
     display: flex;
     align-items: center;
     justify-content: center
 }
 
 #vtexIdUI-global-loader {
-    z-index: 9999 !important;
-    background: initial !important;
-    background-color: var(--color-black) !important
+    z-index: 9999!important;
+    background: initial!important;
+    background-color: var(--color-black)!important
 }
 
 #payment-data .link-gift-card {
@@ -1483,7 +1477,7 @@ select.required:focus {
 }
 
 #payment-data #btn-add-gift-card {
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat,sans-serif;
     background-image: none;
     background-color: var(--color-black);
     color: var(--color-white);
@@ -1504,23 +1498,23 @@ select.required:focus {
 }
 
 #payment-data .payment-discounts-options label:before {
-    content: "Código do Vale:";
+    content: "CÃ³digo do Vale:";
     font-size: 14px;
     font-size: .875rem;
     line-height: 16px;
     color: var(--color-black)
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     #payment-data .payment-discounts-options label {
-        position: absolute;
+        position:absolute;
         top: -18px
     }
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     #payment-data .payment-discounts-options input {
-        width: calc(100% - 119px) !important
+        width:calc(100% - 119px)!important
     }
 }
 
@@ -1538,9 +1532,9 @@ select.required:focus {
     padding: 0 10px
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     #payment-data .payment-discounts-list td.code {
-        display: block
+        display:block
     }
 }
 
@@ -1548,9 +1542,9 @@ select.required:focus {
     font-weight: 800
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     #payment-data .payment-discounts-list td.number {
-        display: block
+        display:block
     }
 }
 
@@ -1573,9 +1567,9 @@ select.required:focus {
     border-radius: initial
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
     #payment-data .payment-discounts-list td.remove a {
-        height: 25px
+        height:25px
     }
 }
 
@@ -1587,13 +1581,13 @@ select.required:focus {
 #payment-data .form-step {
     display: flex;
     flex-direction: column;
-    margin: 10px auto 0 !important;
+    margin: 10px auto 0!important;
     width: auto
 }
 
-@media (max-width:35.99875em) {
+@media (max-width: 35.99875em) {
     #payment-data .form-step {
-        margin: 10px 0 0 !important
+        margin:10px 0 0!important
     }
 }
 
@@ -1605,14 +1599,14 @@ select.required:focus {
     margin-top: 10px
 }
 
-@media (max-width:47.99875em) {
+@media (max-width: 47.99875em) {
     #payment-data .payment-group {
-        margin: 10px 0 0
+        margin:10px 0 0
     }
 }
 
 #payment-data .payment-group-list-btn {
-    width: auto !important;
+    width: auto!important;
     display: flex;
     margin-bottom: 0
 }
@@ -1626,9 +1620,9 @@ select.required:focus {
     width: 100%
 }
 
-@media (max-width:47.99875em) {
+@media (max-width: 47.99875em) {
     #payment-data .payment-group-item {
-        width: 100%
+        width:100%
     }
 }
 
@@ -1637,13 +1631,11 @@ select.required:focus {
     color: var(--color-black)
 }
 
-#payment-data #payment-group-creditCardPaymentGroup .payment-group-item-text,
-#payment-data #payment-group-PayPalPlusPaymentGroup .payment-group-item-text,
-#payment-data .payment-group-item .payment-group-item-text {
+#payment-data #payment-group-creditCardPaymentGroup .payment-group-item-text,#payment-data #payment-group-PayPalPlusPaymentGroup .payment-group-item-text,#payment-data .payment-group-item .payment-group-item-text {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
-    line-height: 12px !important;
-    height: 40px !important;
+    line-height: 12px!important;
+    height: 40px!important;
     display: flex;
     align-items: center;
     padding-right: 50px
@@ -1654,7 +1646,7 @@ select.required:focus {
     background: var(--color-buy);
     color: var(--color-white);
     text-transform: uppercase;
-    font-family: Montserrat, sans-serif !important;
+    font-family: Montserrat,sans-serif!important;
     padding: 0 15px;
     font-size: 12px;
     font-size: .75rem;
@@ -1678,7 +1670,7 @@ select.required:focus {
 }
 
 .mini-cart .srp-summary-result {
-    display: table-row !important
+    display: table-row!important
 }
 
 .mini-cart #orderform-minicart-to-cart {
@@ -1695,15 +1687,15 @@ select.required:focus {
 }
 
 .steps-view {
-    width: calc(100% - 30px) !important;
-    border-radius: 0 !important
+    width: calc(100% - 30px)!important;
+    border-radius: 0!important
 }
 
 .gift-card-section {
     background: transparent;
     padding: initial;
     margin: 0 auto 10px;
-    border-radius: 0 !important
+    border-radius: 0!important
 }
 
 .SecurityEnvironmentIcon {
@@ -1715,21 +1707,21 @@ select.required:focus {
 }
 
 .PaymentInstallments label {
-    display: block !important
+    display: block!important
 }
 
 .PaymentInstallments select {
-    height: 40px !important;
-    border-radius: 0 !important;
+    height: 40px!important;
+    border-radius: 0!important;
     width: 284px;
     outline: 0;
-    font-family: Montserrat, sans-serif !important
+    font-family: Montserrat,sans-serif!important
 }
 
 .PaymentCardDueDate label {
     float: none;
-    display: block !important;
-    padding: initial !important
+    display: block!important;
+    padding: initial!important
 }
 
 .PaymentCardDueDate .payment-card-lash {
@@ -1739,10 +1731,10 @@ select.required:focus {
 }
 
 .PaymentCardDueDate select {
-    height: 40px !important;
-    border-radius: 0 !important;
+    height: 40px!important;
+    border-radius: 0!important;
     outline: 0;
-    font-family: Montserrat, sans-serif !important
+    font-family: Montserrat,sans-serif!important
 }
 
 .PaymentCardHolderName .input-medium {
@@ -1751,12 +1743,12 @@ select.required:focus {
 
 .PaymentCardValue label {
     float: none;
-    display: block !important;
-    padding: initial !important
+    display: block!important;
+    padding: initial!important
 }
 
 .PaymentCardValue .input-prepend {
-    display: inline-flex !important
+    display: inline-flex!important
 }
 
 .PaymentCardValue .add-on {
@@ -1772,8 +1764,8 @@ select.required:focus {
 
 .PaymentCardCVV label {
     float: none;
-    display: block !important;
-    padding: initial !important;
+    display: block!important;
+    padding: initial!important;
     width: auto;
     margin-bottom: 3px
 }
@@ -1783,27 +1775,26 @@ select.required:focus {
 }
 
 #payment-billing-address-state-0 {
-    height: 40px !important;
-    border-radius: 0 !important;
+    height: 40px!important;
+    border-radius: 0!important;
     outline: 0
 }
 
-#payment-billing-address-state-0,
-.CardForm {
-    font-family: Montserrat, sans-serif !important
+#payment-billing-address-state-0,.CardForm {
+    font-family: Montserrat,sans-serif!important
 }
 
 .CardForm {
     width: 100%;
     max-width: 284px;
     padding: 10px;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0,0,0,.1);
     background-color: var(--color-silver);
     margin: 0 auto 15px
 }
 
 .ChangeNumberOfPayments a {
-    font-family: Montserrat, sans-serif !important;
+    font-family: Montserrat,sans-serif!important;
     display: block;
     background-color: var(--color-black);
     color: var(--color-white);
@@ -1828,69 +1819,64 @@ select.required:focus {
     font-size: 14px;
     font-size: .875rem;
     line-height: 16px;
-    top: auto !important;
-    left: auto !important;
-    margin-left: 0 !important;
-    box-shadow: none !important
+    top: auto!important;
+    left: auto!important;
+    margin-left: 0!important;
+    box-shadow: none!important
 }
 
-.vtexIdUI,
-.vtexIdUI input {
-    font-family: Montserrat, sans-serif !important
+.vtexIdUI,.vtexIdUI input {
+    font-family: Montserrat,sans-serif!important
 }
 
-.vtexIdUI input[type=email]:focus,
-.vtexIdUI input[type=password]:focus,
-.vtexIdUI input[type=text]:focus {
-    border-color: rgba(0, 0, 0, .8) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(0, 0, 0, .6) !important
+.vtexIdUI input[type=email]:focus,.vtexIdUI input[type=password]:focus,.vtexIdUI input[type=text]:focus {
+    border-color: rgba(0,0,0,.8)!important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0,0,0,.6)!important
 }
 
 .vtexIdUI .modal-header .close {
-    align-items: center !important;
-    font-size: 40px !important;
-    line-height: 30px !important;
-    padding: 0 4px 15px !important;
-    height: 10px !important;
-    background: transparent !important;
-    color: var(--color-red) !important;
-    top: 25px !important;
-    right: 10px !important
+    align-items: center!important;
+    font-size: 40px!important;
+    line-height: 30px!important;
+    padding: 0 4px 15px!important;
+    height: 10px!important;
+    background: transparent!important;
+    color: var(--color-red)!important;
+    top: 25px!important;
+    right: 10px!important
 }
 
-.vtexIdUI .modal-body,
-.vtexIdUI .modal-header .close {
-    display: flex !important;
-    justify-content: center !important
+.vtexIdUI .modal-body,.vtexIdUI .modal-header .close {
+    display: flex!important;
+    justify-content: center!important
 }
 
 .vtexIdUI .modal-body {
-    min-height: 140px !important;
-    max-height: none !important;
-    flex-direction: column !important;
-    align-content: center !important
+    min-height: 140px!important;
+    max-height: none!important;
+    flex-direction: column!important;
+    align-content: center!important
 }
 
 .vtexIdUI .vtexIdUI-auth-code .vtexIdUI-code-field {
-    width: 60% !important
+    width: 60%!important
 }
 
 .vtexIdUI .vtexIdUI-auth-code .vtexIdUI-code-field input#access-code {
-    color: var(--color-black) !important;
+    color: var(--color-black)!important;
     letter-spacing: 5px
 }
 
 .vtexIdUI .btn {
-    border-radius: 5px !important
+    border-radius: 5px!important
 }
 
-.vtexIdUI .vtexId-link,
-.vtexIdUI a {
-    color: var(--color-black) !important
+.vtexIdUI .vtexId-link,.vtexIdUI a {
+    color: var(--color-black)!important
 }
 
 .modal-header {
-    justify-content: center !important;
+    justify-content: center!important;
     flex-direction: column
 }
 
@@ -1906,13 +1892,13 @@ select.required:focus {
 }
 
 .vtexIdUI-header .vtexIdUI-user-email {
-    float: none !important;
+    float: none!important;
     text-align: center
 }
 
 .vtexIdUI-heading {
     text-align: center;
-    font-weight: 400 !important
+    font-weight: 400!important
 }
 
 .modal-footer {
@@ -1921,7 +1907,7 @@ select.required:focus {
 }
 
 .body-checkout-confirmation {
-    font-family: Montserrat, sans-serif
+    font-family: Montserrat,sans-serif
 }
 
 .srp-postal-code__form {
@@ -1949,7 +1935,7 @@ select.required:focus {
 }
 
 .body-cart .cart-items tbody .add-service-container .add-service::after {
-    content: 'Esse produto é um presente';
+    content: 'Esse produto Ã© um presente';
     font-size: 13px;
 }
 
@@ -1984,4 +1970,75 @@ td.bundle-item-name {
     font-weight: 600;
     text-decoration: underline;
     word-break: break-word;
+}
+
+
+.body-cart .cart-items tbody .quantity .item-unit-label {
+    display: none !important
+}
+
+.icon-remove:before {
+    content: "\f2ed" !important;
+    color: #000;
+}
+
+.cart-links-bottom {
+    margin: 0px 0 25px;
+    border: 0;
+    width: 100%;
+    border-top: 0;
+    display: flex !important;
+    flex-direction: column-reverse;
+    max-width: 36%;
+}
+
+.step, 
+/* .cart,  */
+.totalizers {
+    border: 1px solid #f4f4f4;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 0;
+}
+
+.vtex-omnishipping-1-x-summaryChange {
+    border: 1px solid #151414;
+    border-radius: 0 !important;
+    color: #357edd;
+    display: block;
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 10px 8px;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.accordion-toggle-active {
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 35px;
+    font-style: normal;
+    text-align: left;
+    color: #151414;
+}
+.accordion-toggle {
+    cursor: inherit;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 35px;
+    font-style: normal;
+    text-align: left;
+    color: #151414;
+    text-transform: uppercase;
+}
+.accordion-toggle i {
+    display: none;
 }

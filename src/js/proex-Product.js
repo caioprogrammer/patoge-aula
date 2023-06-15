@@ -3694,11 +3694,7 @@ PERFORMANCE OF THIS SOFTWARE.
                             t.openModal(), 
                             t.closeModal(), 
                             t.scrollbarTable();
-                            $(window).width() > 992 && function () {
-                                t.startCarouselAndSlick();
-                            }
-
-                            
+                            t.startCarouselAndSlick();
                         }, 500);
                 },
                 iconBreadcrumb: function () {
@@ -3716,7 +3712,11 @@ PERFORMANCE OF THIS SOFTWARE.
                             str += `<img src="${e.src.replace('-85-129','')}" />`
                         }
                     })
-                    document.querySelector('.page-product .c-product__left-images').innerHTML = str;
+                    if($(window).width() < 992) {
+                        return;
+                    } else {
+                        document.querySelector('.page-product .c-product__left-images').innerHTML = str;
+                    }
 
                     setTimeout(() => {
                         $('.c-product__left-images').slick({
