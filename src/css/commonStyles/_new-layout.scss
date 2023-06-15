@@ -13,6 +13,9 @@
     src: url(https://patoge.vteximg.com.br/arquivos/pensumDisplay-black.otf.css)
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 :root {
     --color-white: #fff;
     --color-black: #000;
@@ -375,42 +378,45 @@ body.swal2-toast-shown .swal2-container {
 
 .wrapper {
     width: 100%;
-    padding: 0 15px;
-    min-height: 0
-}
-
-@media (min-width: 36em) {
-    .wrapper {
-        width:100%;
-        max-width: 540px;
-        margin: 0 auto
+    padding: 0 60px;
+    min-height: 0;
+    @media screen and (max-width: 768px) {
+        padding: 0 20px;
     }
 }
 
-@media (min-width: 48em) {
-    .wrapper {
-        max-width:720px
-    }
-}
+// @media (min-width: 36em) {
+//     .wrapper {
+//         width:100%;
+//         max-width: 540px;
+//         margin: 0 auto
+//     }
+// }
 
-@media (min-width: 62em) {
-    .wrapper {
-        max-width:960px
-    }
-}
+// @media (min-width: 48em) {
+//     .wrapper {
+//         max-width:720px
+//     }
+// }
 
-@media (min-width: 75em) {
-    .wrapper {
-        max-width:1140px;
-        padding: 0
-    }
-}
+// @media (min-width: 62em) {
+//     .wrapper {
+//         max-width:960px
+//     }
+// }
 
-@media (min-width: 87.5em) {
-    .wrapper {
-        max-width:1320px
-    }
-}
+// @media (min-width: 75em) {
+//     .wrapper {
+//         max-width:1140px;
+//         padding: 0
+//     }
+// }
+
+// @media (min-width: 87.5em) {
+//     .wrapper {
+//         max-width:1320px
+//     }
+// }
 
 .lazyload-vtex img {
     transform: scale(0);
@@ -515,10 +521,11 @@ button {
 }
 
 .c-breadcrumb ul li a {
-    font-size: 14px;
-    font-size: .875rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 13px;
     line-height: 16px;
-    color: var(--color-gray)
+    color: #404040;
 }
 
 .c-breadcrumb ul li a:hover {
@@ -2501,26 +2508,27 @@ button {
 
 .c-shelf__flagDiscount {
     position: absolute;
-    bottom: 10px;
-    right: -5px
+    right: 10px;
+    top: 0;
 }
 
 .c-shelf__flagDiscount .percentage {
-    font-family: Montserrat,sans-serif;
+    font-family: Montserrat, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     width: -webkit-max-content;
     width: -moz-max-content;
-    width: max-content;
+    width: 40px;
     font-size: 10px;
-    font-size: .625rem;
+    font-size: 13px;
     line-height: 12px;
-    height: 25px;
-    background-color: var(--color-black);
+    height: 40px;
+    background-color: #ED6161;
     color: var(--color-white);
     text-transform: uppercase;
-    padding: 5px
+    padding: 5px;
+    text-align: center;
 }
 
 .c-shelf__flagDiscount .percentage:after {
@@ -2530,7 +2538,8 @@ button {
     border-right: 5px solid transparent;
     border-top: 5px solid var(--color-black);
     right: 0;
-    bottom: -5px
+    bottom: -5px;
+    display: none;
 }
 
 .c-shelf__flagHighlight .flag,.c-shelf__flagHighlight .lancamento {
@@ -2629,14 +2638,18 @@ button {
 }
 
 .c-shelf__info-title {
-    text-align: center;
-    height: 58px;
-    margin-bottom: 10px
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151414;
 }
 
-.c-shelf__info-title:hover {
-    color: var(--color-black)
-}
+// .c-shelf__info-title:hover {
+//     color: var(--color-black)
+// }
 
 .c-shelf__info-price {
     flex-direction: column;
@@ -2645,20 +2658,34 @@ button {
 
 .c-shelf__info-listBest,.c-shelf__info-price {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center
 }
 
 .c-shelf__info-listPrice {
-    text-decoration: line-through;
-    color: var(--color-gray);
-    margin-right: 10px
+    margin-right: 10px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #505050;
+}
+
+.c-shelf__info-installment { 
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
 }
 
 .c-shelf__info-bestPrice {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 22px
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #151414;
 }
 
 .vitrine .product-image {
@@ -2745,10 +2772,7 @@ button {
 }
 
 .c-vitrine.vitrine-carousel .vitrine ul {
-    display: grid;
-    grid-template-columns: 30px 1fr 30px;
-    align-items: center;
-    gap: 0
+    position: relative;
 }
 
 .c-vitrine.vitrine-carousel .vitrine ul .slick-list {
@@ -2803,12 +2827,21 @@ button {
     }
 }
 
-.c-vitrine.vitrine-carousel .vitrine ul .icon-arrow-left,.c-vitrine.vitrine-carousel .vitrine ul .icon-arrow-right {
+.c-vitrine.vitrine-carousel .vitrine ul .icon-arrow-left,
+.c-vitrine.vitrine-carousel .vitrine ul .icon-arrow-right {
     width: 30px;
     height: 30px;
-    cursor: pointer
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
 }
-
+.c-vitrine.vitrine-carousel .vitrine ul .icon-arrow-left {
+    left: 0;
+}
+.c-vitrine.vitrine-carousel .vitrine ul .icon-arrow-right {
+    right: 0;
+}
 @media (max-width: 35.99875em) {
     .c-vitrine.vitrine-carousel .vitrine ul .icon-arrow-left,.c-vitrine.vitrine-carousel .vitrine ul .icon-arrow-right {
         padding:8px
@@ -2985,6 +3018,9 @@ button {
     justify-content: flex-start;
     /* min-height: 50px; */
     gap: 10px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 .c-vitrine__item-info .price:last-child {
     min-height: unset;
@@ -4293,7 +4329,8 @@ button {
 
 .c-footer__content-top .c-socials {
     display: flex;
-    align-items: center
+    align-items: center;
+    gap: 10px;
 }
 
 .c-footer__content-top .c-socials__link:not(:last-child) {
@@ -4862,9 +4899,45 @@ img[src=""] {
 
 .page-product .c-product__left-images, 
 .page-product .c-product__left-images #show {
-    max-width: 830px;
+    max-width: 920px;
     overflow: hidden;
 }
 .page-product .c-product__right {
     width: 500px;
+    @media screen and (max-width: 768px) {
+        width: auto;
+    }
+}
+
+
+
+.page-product .c-product__left-images svg.arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+}
+.page-product .c-product__left-images svg.arrow.prev {
+    left: 15px;
+}
+.page-product .c-product__left-images svg.arrow.next {
+    right: 15px;
+}
+.page-product .c-product__left-images .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+.page-product .c-product__left-images .slick-dots li {
+    font-size: 0;
+    width: 25px;
+    height: 4px;
+    background-color: #333333;
+    opacity: .4;
+    cursor: pointer;
+    transition: ease .5s;
+}
+.page-product .c-product__left-images .slick-dots li.slick-active {
+    opacity: 1;
 }

@@ -1,0 +1,1645 @@
+@import url(https://use.fontawesome.com/releases/v6.0.0/css/all.css);@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap);@font-face {
+    font-family: akzidenz-bold;
+    src: url(https://patoge.vteximg.com.br/arquivos/akzidenz-grotesk-bq-bold-condensed.otf.css)
+}
+
+@font-face {
+    font-family: akzidenz-regular;
+    src: url(https://patoge.vteximg.com.br/arquivos/akzidenz-grotesk-bq-condensed.otf.css)
+}
+
+@font-face {
+    font-family: pensumDisplay-black;
+    src: url(https://patoge.vteximg.com.br/arquivos/pensumDisplay-black.otf.css)
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-buy: #58c22e;
+    --color-green-clean: #3edc81;
+    --color-green: #00dd3e;
+    --color-green-dark: #21ba45;
+    --color-whats: #34af23;
+    --color-blue-clean: #29c5ff;
+    --color-blue: #22a7f0;
+    --color-blue-dark: #0287d0;
+    --color-yellow-clean: #ffcf4b;
+    --color-yellow: #ffd542;
+    --color-yellow-dark: #f9b32f;
+    --color-red-clean: #fc2a58;
+    --color-red: #ff4545;
+    --color-red-dark: #d6143e;
+    --color-silver-clean: #f1f1f1;
+    --color-silver: #f9f9f9;
+    --color-silver-dark: #f5f5f5;
+    --color-gray-clean: #909090;
+    --color-gray: grey;
+    --color-gray-dark: #606060;
+    --color-graphite: #353535;
+    --microtip-transition-duration: 0.2s;
+    --microtip-transition-delay: 0s;
+    --microtip-transition-easing: ease-out;
+    --microtip-font-size: 12px;
+    --microtip-font-weight: bold;
+    --microtip-text-transform: uppercase
+}
+
+.page-department .c-fullbanner img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.page-department.feminino .c-filters__content-body .search-multiple-navigator {
+    display: grid
+}
+
+@media (min-width: 48em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator {
+        margin-top:10px;
+        grid-template-areas: "cintura cor" "lavanderia tamanho" "modelagem modelagem";
+        gap: 30px
+    }
+}
+
+@media (min-width: 62em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator {
+        grid-template-areas:"cintura cor" "lavanderia tamanho" "modelagem modelagem";
+        gap: 20px
+    }
+}
+
+@media (min-width: 75em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator {
+        grid-template-areas:"cintura cor tamanho" "lavanderia modelagem modelagem";
+        gap: 30px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+        order:3
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+        grid-area:cintura;
+        order: 0;
+        width: 200px
+    }
+}
+
+.page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+.page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_genero {
+    grid-area: genero;
+    display: none
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+        order:2
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+        grid-area:tamanho;
+        order: 0
+    }
+}
+
+@media (min-width: 62em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+        width:300px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor {
+        order:1
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor {
+        grid-area:cor;
+        order: 0
+    }
+}
+
+.page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+        grid-template-columns:repeat(3,1fr);
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+        row-gap: 10px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+        order:5
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+        grid-area:modelagem;
+        order: 0
+    }
+}
+
+.page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+        grid-template-columns:repeat(3,1fr);
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+        row-gap: 10px
+    }
+}
+
+@media (min-width: 62em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+        grid-template-columns:repeat(4,1fr)
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+        order:4
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+        grid-area:lavanderia;
+        order: 0;
+        width: 200px
+    }
+}
+
+.page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+.page-department.masculino .c-filters__content-body .search-multiple-navigator {
+    display: grid
+}
+
+@media (min-width: 48em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator {
+        margin-top:10px;
+        grid-template-areas: "lavanderia cor" "lavanderia tamanho" "modelagem modelagem";
+        gap: 30px
+    }
+}
+
+@media (min-width: 62em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator {
+        grid-template-areas:"lavanderia cor" "lavanderia tamanho" "modelagem modelagem";
+        gap: 20px
+    }
+}
+
+@media (min-width: 75em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator {
+        grid-template-areas:"lavanderia cor" "tamanho modelagem";
+        gap: 30px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+        order:3
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+        grid-area:cintura;
+        order: 0;
+        width: 200px
+    }
+}
+
+.page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+.page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_genero {
+    grid-area: genero;
+    display: none
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+        order:2
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+        grid-area:tamanho;
+        order: 0
+    }
+}
+
+@media (min-width: 62em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+        width:300px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor {
+        order:1
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor {
+        grid-area:cor;
+        order: 0
+    }
+}
+
+.page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+        grid-template-columns:repeat(3,1fr);
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+        row-gap: 10px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+        order:5
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+        grid-area:modelagem;
+        order: 0
+    }
+}
+
+.page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+        -moz-column-gap:20px;
+        column-gap: 20px;
+        row-gap: 10px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+        order:4
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+        grid-area:lavanderia;
+        order: 0;
+        width: 200px
+    }
+}
+
+.page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+// .page-department.sale .c-filters__content-body .search-multiple-navigator {
+//     display: grid
+// }
+
+// @media (min-width: 48em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator {
+//         margin-top:10px;
+//         grid-template-areas: "genero cor" "cintura cor" "lavanderia tamanho" "modelagem modelagem";
+//         gap: 30px
+//     }
+// }
+
+// @media (min-width: 62em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator {
+//         grid-template-areas:"genero cor" "cintura cor" "lavanderia tamanho" "modelagem modelagem";
+//         gap: 20px
+//     }
+// }
+
+// @media (min-width: 75em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator {
+//         grid-template-areas:"genero cor tamanho" "lavanderia modelagem modelagem" "cintura modelagem modelagem";
+//         gap: 30px
+//     }
+// }
+
+@media (max-width: 47.99875em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+        order:3
+    }
+}
+
+@media (min-width: 48em) {
+    // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+    //     grid-area:cintura;
+    //     order: 0
+    // }
+}
+
+@media (min-width: 62em) {
+    // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+    //     width:200px
+    // }
+}
+
+.page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero {
+        order:1
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero {
+        grid-area:genero;
+        order: 0
+    }
+}
+
+@media (min-width: 62em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero {
+        width:200px
+    }
+}
+
+.page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+        order:2
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+        grid-area:tamanho;
+        order: 0
+    }
+}
+
+@media (min-width: 62em) {
+    // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+    //     width:300px
+    // }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor {
+        order:1
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor {
+        grid-area:cor;
+        order: 0
+    }
+}
+
+.page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+        -moz-column-gap:20px;
+        column-gap: 20px;
+        row-gap: 10px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+        order:5
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+        grid-area:modelagem;
+        order: 0
+    }
+}
+
+.page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+        grid-template-columns:repeat(3,1fr);
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+        row-gap: 10px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+    //     order:4
+    // }
+}
+
+@media (min-width: 48em) {
+    // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+    //     grid-area:lavanderia;
+    //     order: 0
+    // }
+}
+
+@media (min-width: 62em) {
+    // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+    //     width:200px
+    // }
+}
+
+.page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+.page-department.page-denim-days .c-filters__content-body .search-single-navigator {
+    display: grid!important
+}
+
+@media (min-width: 48em) {
+    .page-department.page-denim-days .c-filters__content-body .search-single-navigator {
+        grid-template-columns:repeat(3,1fr);
+        -moz-column-gap: 60px;
+        column-gap: 60px
+    }
+}
+
+.page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
+    display: grid
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
+        margin-top:10px;
+        grid-template-areas: "lavanderia cor" "genero tamanho" "cintura modelagem";
+        gap: 30px
+    }
+}
+
+@media (min-width: 62em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
+        grid-template-areas:"lavanderia cor" "genero tamanho" "cintura modelagem";
+        gap: 20px
+    }
+}
+
+@media (min-width: 75em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
+        grid-template-areas:"lavanderia cintura cor" "genero tamanho modelagem";
+        gap: 30px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+        order:4
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+        grid-area:cintura;
+        order: 0;
+        width: 200px
+    }
+}
+
+.page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero {
+        order:1
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero {
+        grid-area:genero;
+        order: 0
+    }
+}
+
+.page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_tamanho,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+        order:2
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_tamanho,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+        grid-area:tamanho;
+        order: 0
+    }
+}
+
+@media (min-width: 62em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_tamanho,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+        width:300px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor {
+        order:3
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor {
+        grid-area:cor;
+        order: 0
+    }
+}
+
+.page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+        grid-template-columns:repeat(3,1fr);
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+        row-gap: 10px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+        order:6
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+        grid-area:modelagem;
+        order: 0
+    }
+}
+
+.page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+        -moz-column-gap:20px;
+        column-gap: 20px;
+        row-gap: 10px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+        order:4
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+        grid-area:lavanderia;
+        order: 0;
+        width: 200px
+    }
+}
+
+.page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-breadcrumb ul {
+        text-align:center;
+        justify-content: center
+    }
+}
+
+.page-department .c-filters {
+    // position: relative
+}
+
+.page-department .c-filters__link {
+    display: none;
+    align-items: center;
+    font-family: Montserrat,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.page-department .c-filters__link .icon-down {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    transition: all .3s ease-in-out
+}
+
+.page-department .c-filters__link.open .icon-down {
+    transform: rotate(-180deg)
+}
+
+.page-department .c-filters__content {
+    // padding: 30px;
+    background-color: var(--color-white);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: block !important;
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content {
+        position:fixed;
+        margin: 0;
+        width: 100%;
+        max-width: 460px;
+        height: 100vh;
+        z-index: 99999;
+        background-color: var(--color-white);
+        top: 0;
+        left: -110%;
+        padding: 15px 30px;
+        overflow-y: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+        transition: all .3s ease-in-out
+    }
+
+    .page-department .c-filters__content.active {
+        left: 0
+    }
+}
+
+@media (max-width: 47.99875em) and (min-width:48em) {
+    .page-department .c-filters__content {
+        border-top:3px solid var(--color-black)
+    }
+}
+
+.page-department .c-filters__content:before {
+    // content: "";
+    border: 8px solid transparent;
+    border-bottom: 10px solid var(--color-black);
+    left: 40px;
+    position: absolute;
+    top: -20px
+}
+
+.page-department .c-filters__content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-black)
+}
+
+@media (min-width: 48em) {
+    .page-department .c-filters__content-header {
+        display:none
+    }
+}
+
+.page-department .c-filters__content-header .icon-close {
+    width: 20px;
+    height: 20px;
+    cursor: pointer
+}
+
+.page-department .c-filters__content-title {
+    font-family: Montserrat,sans-serif;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0
+}
+
+.page-department .c-filters__content-text {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 800
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-single-navigator {
+        display:none!important;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px
+    }
+}
+
+.page-department .c-filters__content-body .search-single-navigator h3,.page-department .c-filters__content-body .search-single-navigator h4 {
+    margin: 0
+}
+
+.page-department .c-filters__content-body .search-single-navigator h3 a,.page-department .c-filters__content-body .search-single-navigator h4 a {
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+    padding: 17px 0;
+    color: var(--color-black)
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-single-navigator h3 a,.page-department .c-filters__content-body .search-single-navigator h4 a {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        height: 40px;
+        background-color: var(--color-silver);
+        font-size: 12px;
+        font-size: .75rem;
+        line-height: 12px;
+        text-transform: uppercase;
+        color: var(--color-black);
+        border: 1px solid rgba(0,0,0,.2)
+    }
+}
+
+.page-department .c-filters__content-body .search-single-navigator h3 a:hover,.page-department .c-filters__content-body .search-single-navigator h4 a:hover {
+    color: var(--color-black);
+    text-decoration: underline
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-single-navigator h3 a:hover,.page-department .c-filters__content-body .search-single-navigator h4 a:hover {
+        color:var(--color-white);
+        background-color: var(--color-black);
+        border: 1px solid var(--color-black);
+        text-decoration: none
+    }
+}
+
+.page-department .c-filters__content-body .search-single-navigator ul {
+    display: none
+}
+
+// .page-department .c-filters__content-body .search-multiple-navigator {
+//     display: grid
+// }
+
+// @media (min-width: 48em) {
+//     .page-department .c-filters__content-body .search-multiple-navigator {
+//         margin-top:10px;
+//         grid-template-areas: "lavanderia cor" "genero tamanho" "cintura modelagem";
+//         gap: 30px
+//     }
+// }
+
+// @media (min-width: 62em) {
+//     .page-department .c-filters__content-body .search-multiple-navigator {
+//         grid-template-areas:"lavanderia cor" "genero tamanho" "cintura modelagem";
+//         gap: 20px
+//     }
+// }
+
+// @media (min-width: 75em) {
+//     .page-department .c-filters__content-body .search-multiple-navigator {
+//         grid-template-areas:"lavanderia cintura cor" "genero tamanho modelagem";
+//         gap: 30px
+//     }
+// }
+
+.page-department .c-filters__content-body .search-multiple-navigator .bt-refinar {
+    display: none
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator h3,.page-department .c-filters__content-body .search-multiple-navigator h5 {
+    font-family: Montserrat,sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 18px;
+    text-transform: uppercase;
+    // margin: 0 0 20px;
+    font-weight: 800;
+    // border-bottom: 1px solid rgba(0,0,0,.2);
+    // padding-bottom: 5px
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator h3:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    margin-top: 5px;
+    background-color: var(--color-pink)
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator h3 a,.page-department .c-filters__content-body .search-multiple-navigator h3 a:hover {
+    color: var(--color-brown)
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator h4,.page-department .c-filters__content-body .search-multiple-navigator ul {
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 20px;
+    border-bottom: 1px solid rgba(0,0,0,.05)
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator h4 a,.page-department .c-filters__content-body .search-multiple-navigator ul a {
+    display: block;
+    padding: 17px 0;
+    color: #a0a0a0
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator h3,.page-department .c-filters__content-body .search-multiple-navigator h4 {
+    display: none
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset {
+    // padding-right: 15px
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset {
+        margin-bottom:25px
+    }
+}
+
+@media (max-width: 61.99875em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset {
+        padding-right:10px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset {
+        padding-right:0
+    }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset div {
+    display: grid;
+    gap: 5px
+}
+
+@media (min-width: 48em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset div {
+        -moz-column-gap: 30px;
+        column-gap: 30px;
+        height: 100%;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 32px;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        background: #ffffff;
+    }
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset div.active {
+        z-index: 9;
+        max-height: unset;
+        height: 40vh;
+    }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset div label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--color-graphite-dark)
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset div label {
+        background-color:var(--color-silver);
+        font-size: 12px;
+        font-size: .75rem;
+        line-height: 12px;
+        justify-content: center;
+        text-align: center;
+        height: 40px;
+        border: 1px solid rgba(0,0,0,.2)
+    }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset div label.sr_selected {
+    color: var(--color-black);
+    text-decoration: underline
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset div label.sr_selected {
+        color:var(--color-white);
+        background-color: var(--color-black);
+        border: 1px solid var(--color-black)
+    }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset div label:hover {
+    color: var(--color-black);
+    text-decoration: underline
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset div label:hover {
+        color:var(--color-white);
+        background-color: var(--color-black);
+        border: 1px solid var(--color-black);
+        text-decoration: none
+    }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_departamento,.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_marca,.page-department .c-filters__content-body .search-multiple-navigator fieldset div label input {
+    display: none
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px
+}
+
+@media (min-width: 62em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div {
+        grid-template-columns:repeat(5,1fr)
+    }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--color-silver);
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: var(--color-black);
+    border: 1px solid rgba(0,0,0,.2);
+    cursor: pointer
+}
+
+@media (min-width: 48em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label {
+        height:35px;
+        font-size: 14px;
+        font-size: .875rem;
+        line-height: 14px
+    }
+}
+
+@media (min-width: 62em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label {
+        width:40px;
+        height: 30px
+    }
+}
+
+@media (min-width: 75em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label {
+        width:100%;
+        height: 35px
+    }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_selected,.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label:hover {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border: 1px solid var(--color-black);
+    text-decoration: none
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label input {
+    display: none
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_pp {
+    order: 1
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_p {
+    order: 2
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_m {
+    order: 3
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_g {
+    order: 4
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_gg {
+    order: 5
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_30 {
+    order: 6
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_32 {
+    order: 7
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_34 {
+    order: 8
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_36 {
+    order: 9
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_38 {
+    order: 10
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_40 {
+    order: 11
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_42 {
+    order: 12
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_44 {
+    order: 13
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_46 {
+    order: 14
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_48 {
+    order: 15
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label.sr_50 {
+    order: 16
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cintura {
+        order:4
+    }
+}
+
+@media (min-width: 48em) {
+    // .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cintura {
+    //     grid-area:cintura;
+    //     order: 0;
+    //     width: 200px
+    // }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cintura div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cintura div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_genero {
+        order:1
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_genero {
+        grid-area:genero;
+        order: 0
+    }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_genero div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_genero div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho {
+        order:2
+    }
+}
+
+@media (min-width: 48em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho {
+        grid-area:tamanho;
+        order: 0
+    }
+}
+
+@media (min-width: 62em) {
+    // .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho {
+    //     width:300px
+    // }
+}
+
+@media (max-width: 47.99875em) {
+    // .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cor {
+    //     order:3
+    // }
+}
+
+@media (min-width: 48em) {
+    // .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cor {
+    //     grid-area:cor;
+    //     order: 0
+    // }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cor div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cor div {
+        grid-template-columns:repeat(3,1fr);
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+        row-gap: 10px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    // .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_modelagem {
+    //     order:6
+    // }
+}
+
+@media (min-width: 48em) {
+    // .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_modelagem {
+    //     grid-area:modelagem;
+    //     order: 0
+    // }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_modelagem div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_modelagem div {
+        -moz-column-gap:20px;
+        column-gap: 20px;
+        row-gap: 10px
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_lavanderia {
+        order:4
+    }
+}
+
+@media (min-width: 48em) {
+    // .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_lavanderia {
+    //     grid-area:lavanderia;
+    //     order: 0;
+    //     width: 200px
+    // }
+}
+
+.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_lavanderia div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+}
+
+@media (min-width: 48em) {
+    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_lavanderia div {
+        grid-template-columns:1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px
+    }
+}
+
+.page-department .c-filters-clean {
+    display: block;
+    width: 90%;
+    text-align: center;
+    font-size: 12px;
+    padding: 11px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 700;
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+    cursor: pointer
+}
+
+@media (max-width: 61.99875em) {
+    .page-department .c-filters-clean {
+        width:100%
+    }
+}
+
+.page-department .c-filters .menu-navegue {
+    display: none
+}
+
+.page-department .c-list {
+    padding-top: 20px;
+    transition: all .3s ease-in-out
+}
+
+.page-department .c-list__tags {
+    display: grid;
+    gap: 5px;
+    align-items: center;
+    background-color: var(--color-silver);
+    margin-bottom: 10px;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in-out
+}
+
+@media (min-width: 48em) {
+    .page-department .c-list__tags {
+        grid-template-columns:1fr auto
+    }
+}
+
+.page-department .c-list__tags.active {
+    opacity: 1;
+    visibility: visible;
+    height: 100%
+}
+
+.page-department .c-list__tags #filters {
+    padding: 10px 10px 5px
+}
+
+.page-department .c-list__tags .applied-filter__item {
+    display: inline-block;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 12px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 8px 35px 8px 10px;
+    transition: all .3s ease-in-out
+}
+
+.page-department .c-list__tags .applied-filter__item:after {
+    content: "x";
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: var(--color-white);
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    border-left: 1px solid hsla(0,0%,100%,.5);
+    padding: 0 0 5px 7px
+}
+
+.page-department .c-list__tags .clear-filter-btn {
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 14px;
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer
+}
+
+.page-department .c-list__tags .clear-filter-btn:hover {
+    color: var(--color-black);
+    text-decoration: underline
+}
+
+.page-department .c-list__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.page-department .c-list__top .c-orderBy {
+    font-family: Montserrat,sans-serif;
+    text-transform: uppercase;
+    position: relative
+}
+
+.page-department .c-list__top .c-orderBy__title {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer
+}
+
+.page-department .c-list__top .c-orderBy__title .icon-down {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    transition: all .3s ease-in-out
+}
+
+.page-department .c-list__top .c-orderBy__title.open .icon-down {
+    transform: rotate(-180deg)
+}
+
+.page-department .c-list__top .c-orderBy__box {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 15px;
+    right: 0;
+    position: absolute;
+    background-color: var(--color-white);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-top: 3px solid var(--color-black);
+    z-index: 9
+}
+
+.page-department .c-list__top .c-orderBy__box:before {
+    content: "";
+    border: 8px solid transparent;
+    border-bottom: 10px solid var(--color-black);
+    right: 75px;
+    position: absolute;
+    top: -20px
+}
+
+.page-department .c-list__top .c-orderBy__box a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--color-graphite-dark)
+}
+
+.page-department .c-list__top .c-orderBy__box a:not(:last-child) {
+    margin-bottom: 15px
+}
+
+.page-department .c-list__top .c-orderBy__box a:hover {
+    color: var(--color-black);
+    text-decoration: underline
+}
+
+.page-department .c-list__shelf {
+    margin: 30px 0 50px
+}
+
+.page-department .c-list__shelf .compare,.page-department .c-list__shelf .pages,.page-department .c-list__shelf .searchResultsTime,.page-department .c-list__shelf .sub {
+    display: none
+}
+
+.page-department .c-list__shelf ul {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 15px
+}
+
+@media (min-width: 36em) {
+    .page-department .c-list__shelf ul {
+        grid-template-columns:repeat(2,1fr)
+    }
+}
+
+@media (min-width: 62em) {
+    .page-department .c-list__shelf ul {
+        grid-template-columns:repeat(3,1fr)
+    }
+}
+
+@media (min-width: 87.5em) {
+    .page-department .c-list__shelf ul {
+        grid-template-columns:repeat(4,1fr)
+    }
+}
+
+
+.search-multiple-navigator {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+.page-department .c-filters__content-body .search-multiple-navigator h5 {
+    cursor: pointer;
+}
+.page-department .c-filters__content-body .search-multiple-navigator h5::after {
+    content: url('data:image/svg+xml; utf8, <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.41421 0.257355L0 1.67158L7.07104 8.74263L14.1421 1.6716L12.7279 0.257385L7.07104 5.91423L1.41421 0.257355Z" fill="black"/></svg>');
+    margin-left: 5px;
+}

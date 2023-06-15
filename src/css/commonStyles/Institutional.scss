@@ -1,0 +1,302 @@
+@import url(https://use.fontawesome.com/releases/v6.0.0/css/all.css);@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap);@font-face {
+    font-family: akzidenz-bold;
+    src: url(https://patoge.vteximg.com.br/arquivos/akzidenz-grotesk-bq-bold-condensed.otf.css)
+}
+
+@font-face {
+    font-family: akzidenz-regular;
+    src: url(https://patoge.vteximg.com.br/arquivos/akzidenz-grotesk-bq-condensed.otf.css)
+}
+
+@font-face {
+    font-family: pensumDisplay-black;
+    src: url(https://patoge.vteximg.com.br/arquivos/pensumDisplay-black.otf.css)
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-buy: #58c22e;
+    --color-green-clean: #3edc81;
+    --color-green: #00dd3e;
+    --color-green-dark: #21ba45;
+    --color-whats: #34af23;
+    --color-blue-clean: #29c5ff;
+    --color-blue: #22a7f0;
+    --color-blue-dark: #0287d0;
+    --color-yellow-clean: #ffcf4b;
+    --color-yellow: #ffd542;
+    --color-yellow-dark: #f9b32f;
+    --color-red-clean: #fc2a58;
+    --color-red: #ff4545;
+    --color-red-dark: #d6143e;
+    --color-silver-clean: #f1f1f1;
+    --color-silver: #f9f9f9;
+    --color-silver-dark: #f5f5f5;
+    --color-gray-clean: #909090;
+    --color-gray: grey;
+    --color-gray-dark: #606060;
+    --color-graphite: #353535;
+    --microtip-transition-duration: 0.2s;
+    --microtip-transition-delay: 0s;
+    --microtip-transition-easing: ease-out;
+    --microtip-font-size: 12px;
+    --microtip-font-weight: bold;
+    --microtip-text-transform: uppercase
+}
+
+.page-institutional.page-devolucoes .link-devolucoes,.page-institutional.page-duvidas .link-duvidas,.page-institutional.page-entrega .link-entrega,.page-institutional.page-marca .link-marca,.page-institutional.page-pagamento .link-pagamento,.page-institutional.page-retire .link-retire,.page-institutional.page-seguranca .link-seguranca,.page-institutional.page-termos .link-termos {
+    color: var(--color-black)!important;
+    text-decoration: underline
+}
+
+.page-institutional .c-institutional {
+    padding: 15px 0
+}
+
+@media (min-width: 48em) {
+    .page-institutional .c-institutional {
+        padding:50px 0
+    }
+}
+
+@media (min-width: 48em) {
+    .page-institutional .c-institutional__content {
+        display:grid;
+        gap: 20px;
+        grid-template-columns: 200px 1fr
+    }
+}
+
+.page-institutional .c-institutional__menu {
+    position: relative
+}
+.page-institutional .c-institutional__menu button#open-options {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media (min-width: 48em) {
+    .page-institutional .c-institutional__menu .menu-institucional.active {
+        width:200px;
+        position: fixed;
+        top: 20px
+    }
+
+    .page-institutional .c-institutional__menu .menu-institucional.inactive {
+        width: 200px;
+        position: absolute;
+        bottom: 0
+    }
+}
+
+@media (max-width: 47.99875em) {
+    .page-institutional .c-institutional__menu .menu-institucional ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        -moz-column-gap: 10px;
+        column-gap: 10px;
+        row-gap: 20px;
+        margin-bottom: 30px;
+        height: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height ease 1s;
+       margin-top: 24px;
+    }
+    .page-institutional .c-institutional__menu .menu-institucional ul.active {
+        max-height: 500px;
+    }
+}
+
+.page-institutional .c-institutional__menu .menu-institucional__link {
+    display: block;
+    font-size: 10px;
+    font-size: 0.875rem;
+    line-height: 12px;
+    color: var(--color-black);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.page-institutional .c-institutional__menu .menu-institucional__link:hover {
+    color: var(--color-black)
+}
+
+@media (min-width: 48em) {
+    .page-institutional .c-institutional__menu .menu-institucional__link {
+        font-size:12px;
+        font-size: .75rem;
+        line-height: 14px;
+        padding: 10px 0
+    }
+}
+
+.page-institutional .c-institutional__texts {
+    color: var(--color-black)
+}
+
+.page-institutional .c-institutional__texts h1 {
+    margin: 0 0 50px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    color: #151414;
+}
+
+@media (max-width: 47.99875em) {
+    .page-institutional .c-institutional__texts h1 {
+        font-size:24px;
+        font-size: 1.5rem;
+        line-height: 26px;
+        margin: 0
+    }
+}
+
+.page-institutional .c-institutional__texts h2 {
+    text-transform: uppercase;
+    margin: 30px 0 10px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #151414;
+}
+
+@media (max-width: 47.99875em) {
+    .page-institutional .c-institutional__texts h2 {
+        font-size:16px;
+        font-size: 1rem;
+        line-height: 18px;
+        margin: 20px 0 10px
+    }
+}
+
+.page-institutional .c-institutional__texts h3 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 40px 0 10px
+}
+
+@media (max-width: 47.99875em) {
+    .page-institutional .c-institutional__texts h3 {
+        font-size:16px;
+        font-size: 1rem;
+        line-height: 18px;
+        margin: 20px 0 10px
+    }
+}
+
+.page-institutional .c-institutional__texts .resp {
+    background-color: var(--color-silver);
+    padding: 15px;
+    margin-bottom: 15px
+}
+
+.page-institutional .c-institutional__texts .resp h2 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 18px;
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.1)
+}
+
+.page-institutional .c-institutional__texts .resp p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 16px
+}
+
+.page-institutional .c-institutional__texts .resp p:not(:last-child) {
+    margin-bottom: 10px
+}
+
+.page-institutional .c-institutional__texts .resp a strong {
+    text-decoration: underline
+}
+
+.page-institutional .c-institutional__texts .resp li {
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 16px
+}
+
+.page-institutional .c-institutional__texts p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 24px
+}
+
+@media (max-width: 47.99875em) {
+    .page-institutional .c-institutional__texts p {
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: 'Montserrat';
+    }
+}
+
+.page-institutional .c-institutional__texts p.botao {
+    display: flex;
+    padding: 10px
+}
+
+.page-institutional .c-institutional__texts p a {
+    color: var(--color-black)
+}
+
+.page-institutional .c-institutional__texts p a.btn-autorizacao {
+    background-color: var(--color-black);
+    color: var(--color-white)!important;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 16px;
+    font-weight: 600
+}
+
+.page-institutional .c-institutional__texts p a.btn-autorizacao i {
+    margin-right: 5px
+}
+
+.page-institutional .c-institutional__texts ul {
+    list-style: initial;
+    padding-left: 15px
+}
+
+.page-institutional .c-institutional__texts li {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 15px
+}
+
+@media (max-width: 47.99875em) {
+    .page-institutional .c-institutional__texts li {
+        font-size:14px;
+        font-size: .875rem;
+        line-height: 22px
+    }
+}
+
+.page-institutional .c-institutional__texts li a {
+    color: var(--color-black)
+}

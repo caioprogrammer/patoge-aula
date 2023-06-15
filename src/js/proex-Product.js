@@ -248,7 +248,7 @@
             }
             createStructure() {
                 this.element.html(
-                    '\n\t\t\t<div class="productCep">\n        <span class="productCep__title active">\n          Calcule o frete e prazo de entrega!\n        </span>\n\t\t\t\t<fieldset>\n\t\t\t\t\t<div class="productCep__form">\n            <div class="productCep__form-calculate">\n              <div class="form">\n                <input id="productCep-valorCep" type="number" class="productCep__valorCep" max="8" placeholder="Digite seu CEP"></input>\n                <button class="productCep__submit-cep">Calcular</button>\n              </div>\n              <a class="productCep__form-link active" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">NÃ£o sei o CEP</a>\n            </div>\n\t\t\t\t\t\t<span class="productCep__precoFrete"></span>\n\t\t\t\t\t</div>\n\t\t\t\t</fieldset>\n\t\t\t\t<button class="productCep__refreshCalc">Trocar o CEP</button>\n\t\t\t</div>\n\t\t'
+                    '\n\t\t\t<div class="productCep">\n        <span class="productCep__title active">\n          Calcule o frete e prazo de entrega!\n        </span>\n\t\t\t\t<fieldset>\n\t\t\t\t\t<div class="productCep__form">\n            <div class="productCep__form-calculate">\n              <div class="form">\n                <input id="productCep-valorCep" type="number" class="productCep__valorCep" max="8" placeholder="Calcule o frete"></input>\n                <button class="productCep__submit-cep">Calcular</button>\n              </div>\n              <a class="productCep__form-link active" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">NÃO SEI O CEP</a>\n            </div>\n\t\t\t\t\t\t<span class="productCep__precoFrete"></span>\n\t\t\t\t\t</div>\n\t\t\t\t</fieldset>\n\t\t\t\t<button class="productCep__refreshCalc">Trocar o CEP</button>\n\t\t\t</div>\n\t\t'
                 );
             }
             selectors() {
@@ -3634,8 +3634,9 @@ PERFORMANCE OF THIS SOFTWARE.
                 "" !== i && t.find("#show").after(`<div class="product-image-mobile d-block d-lg-none">\n        <ul id="product-image-mobile-carousel">\n          ${i}\n        </ul>\n      </div>`),
                 $("#product-image-mobile-carousel").slick(
                     { slidesToShow: 1, 
-                        slidesToScroll: 3, 
+                        slidesToScroll: 1, 
                         autoplay: !0, 
+                        dots: true,
                         autoplaySpeed: 2e3, 
                         arrows: !0, 
                         prevArrow: Et.left, 
@@ -3693,7 +3694,9 @@ PERFORMANCE OF THIS SOFTWARE.
                             t.openModal(), 
                             t.closeModal(), 
                             t.scrollbarTable();
-                            t.startCarouselAndSlick();
+                            $(window).width() > 992 && function () {
+                                t.startCarouselAndSlick();
+                            }
 
                             
                         }, 500);
@@ -3720,9 +3723,18 @@ PERFORMANCE OF THIS SOFTWARE.
                             slidesToShow: 2,
                             slidesToScroll: 1,
                             vertical: false,
-                            infinite: true
+                            infinite: true,
+                            arrows: true,
+                            dots: true,
+                            prevArrow: '<svg width="16" class="prev arrow" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.485 2.614 12.905 0 0 13.071l12.905 13.071 2.58-2.614L5.162 13.071 15.485 2.614Z" fill="#000"/></svg>',
+                            nextArrow: '<svg width="16" class="next arrow" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m.486 23.67 2.58 2.614 12.905-13.07L3.066.141.486 2.756l10.323 10.457L.486 23.67Z" fill="#000"/></svg>',
+                            breakpoints: {
+                                768: {
+                                    slidesToShow: 1
+                                }
+                            }
                         })
-                    }, 300);
+                    }, 2000);
                 },
                 sizeTable: function () {
                     const t = $(".c-product__left-images #image-main").attr("src"),
@@ -3768,7 +3780,7 @@ PERFORMANCE OF THIS SOFTWARE.
 
                     ($("#modalWoman").length || $("#modalMan").length || $("#modalCurvy").length) &&
                         $(".c-product__right .table").append(
-                            '\n          <div class="js-modal">\n            <img src="/arquivos/icon-dummy.png" alt="Imagem de um manequim" />\n            <span>Tabela de Medidas</span>\n          </div>\n        '
+                            '\n          <div class="js-modal">\n            <img src="/arquivos/icon-dummy-new.png" alt="Imagem de um manequim" />\n            <span>Tabela de Medidas</span>\n          </div>\n        '
                         ),
                     $(window).width() < 750 &&
                         $(".c-sizeTable__size-column").each(function () {
@@ -3814,12 +3826,12 @@ PERFORMANCE OF THIS SOFTWARE.
                                         t.skuData.SkuSellersInformation[0].AvailableQuantity < 3 &&
                                             (t.skuData.SkuSellersInformation[0].AvailableQuantity >= 1 &&
                                                 ($(".c-product__right-size-quantity").html(
-                                                    `\n                  <span class="text">\n                    <strong>EstÃ¡ acabando!</strong> Restam apenas ${t.skuData.SkuSellersInformation[0].AvailableQuantity} peÃ§as em estoque.\n                  </span>\n                `
+                                                    `\n                  <span class="text">\n                    <strong>Está acabando!</strong> Restam apenas ${t.skuData.SkuSellersInformation[0].AvailableQuantity} peças em estoque.\n                  </span>\n                `
                                                 ),
                                                 $(".c-product__right-size .Tamanho label.sku-picked").addClass("arrow-top")),
                                             t.skuData.SkuSellersInformation[0].AvailableQuantity < 2 &&
                                                 ($(".c-product__right-size-quantity").html(
-                                                    `\n                  <span class="text">\n                    <strong>EstÃ¡ acabando!</strong> Resta apenas ${t.skuData.SkuSellersInformation[0].AvailableQuantity} peÃ§a em estoque.\n                  </span>\n                `
+                                                    `\n                  <span class="text">\n                    <strong>Está acabando!</strong> Resta apenas ${t.skuData.SkuSellersInformation[0].AvailableQuantity} peça em estoque.\n                  </span>\n                `
                                                 ),
                                                 $(".c-product__right-size .Tamanho label.sku-picked").addClass("arrow-top")),
                                             0 == t.skuData.SkuSellersInformation[0].AvailableQuantity && ($(".c-product__right-size-quantity").html(""), $(".c-product__right-size .Tamanho label").removeClass("arrow-top")));

@@ -7,6 +7,10 @@
         e.target.classList.toggle("active")
     })
 
+    $(".page-institutional .c-institutional__menu button#open-options").on("click", function() {
+        $(".page-institutional .c-institutional__menu .menu-institucional ul").toggleClass("active");
+    })
+
     $(".c-categories__buttons button#masculino").on("click", function() {
         $(".c-categories__buttons button#masculino").addClass("active");
         $(".c-categories__buttons button#feminino").removeClass("active");
@@ -315,7 +319,7 @@
                             filterButtonClass: ".filter-btn",
                             clearButtonClass: ".clear-filter-btn",
                             infinitScroll: !1,
-                            loadMoreText: "Ver Mais",
+                            loadMoreText: "Carregar mais",
                             filterScrollTop: function (e) {
                                 return e.top - 20;
                             },
@@ -492,6 +496,7 @@
                         exec: function () {
                             D.setFilterMenu(),
                                 D.fieldsetFormat(),
+                                D.newMenuFuncionality(),
                                 i.each(function () {
                                     var e = jQuery(this),
                                         t = e.parent();
@@ -499,7 +504,9 @@
                                         D.adjustText(e),
                                         t.append('<span class="sr_box"></span><span class="sr_box2"></span>'),
                                         e.bind("change", function () {
-                                            D.inputAction(), e.is(":checked") ? D.addFilter(e) : D.removeFilter(e), s.filterOnChange && (b.filters = i.filter(":checked").length);
+                                            D.inputAction(), 
+                                            e.is(":checked") ? D.addFilter(e) : D.removeFilter(e), 
+                                            s.filterOnChange && (b.filters = i.filter(":checked").length);
                                         });
                                 }),
                                 jQuery(s.filterButtonClass).on("click", function () {
@@ -513,6 +520,13 @@
                                 D.atualizarPaginador(),
                                 S("vsr-complete");
                         },
+                        newMenuFuncionality: function () {
+                            jQuery( ".page-department .c-filters__content-body .search-multiple-navigator fieldset" ).each(function(index) {
+                                jQuery(this).on("click", function(){
+                                    jQuery(this).find('h5').next().toggleClass('active');
+                                });
+                            });
+                        },
                         mergeMenu: function () {
                             if (!s.mergeMenu) return !1;
                             var e = O;
@@ -523,7 +537,8 @@
                             var e = 0;
                             C.find("h3, h4").each(function () {
                                 var t = F.find("h3, h4").eq(e).next("ul");
-                                t.insertAfter(jQuery(this)), D.departamentMenuFormat(t), e++;
+                                t.insertAfter(jQuery(this)), 
+                                D.departamentMenuFormat(t), e++;
                             });
                         },
                         departamentMenuFormat: function (e) {
@@ -553,6 +568,9 @@
                                               }),
                                               y.fieldsetCount++);
                                 });
+                        },
+                        setFilterMenu: function () {
+                            C.length > 0 && (F.hide(), C.show());
                         },
                         inputAction: function () {
                             null !== B && B.abort(), null !== E && E.abort(), (d = 2), (u = !0);
@@ -639,9 +657,6 @@
                             return e.replace(/\([0-9]+\)/gi, function (e) {
                                 return "";
                             });
-                        },
-                        setFilterMenu: function () {
-                            C.length > 0 && (F.hide(), C.show());
                         },
                         atualizarPaginador: function () {
                             n(t).on("vsr-contagem-produtos", function (e, t) {
