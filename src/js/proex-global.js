@@ -14,23 +14,43 @@
     $(".c-categories__buttons button#masculino").on("click", function() {
         $(".c-categories__buttons button#masculino").addClass("active");
         $(".c-categories__buttons button#feminino").removeClass("active");
-        $(".c-categories__content").fadeIn()
-        $(".c-categories__content--2").fadeOut()
+        $(".c-categories__content").show()
+        $(".c-categories__content--2").hide()
     });
     $(".c-categories__buttons button#feminino").on("click", function() {
         $(".c-categories__buttons button#masculino").removeClass("active");
         $(".c-categories__buttons button#feminino").addClass("active");
-        $(".c-categories__content").fadeOut()
-        $(".c-categories__content--2").fadeIn()
+        $(".c-categories__content").hide()
+        $(".c-categories__content--2").show()
     });
 
-    $(".c-person").on("click", function () {
-        $(".c-person").toggleClass("active");
-        $(".c-support").removeClass("active")
+    $(".c-person, .c-person.modal-body").on({
+        mouseenter: function () {
+            $(".c-person").addClass("active");
+        },
+        mouseleave: function () {
+            $(".c-person").removeClass("active");
+        }
     })
-    $(".c-support").on("click", function () {
-        $(".c-support").toggleClass("active")
-        $(".c-person").removeClass("active")
+
+    $(".c-support, .c-support.modal-body").on({
+        mouseenter: function () {
+            $(".c-support").addClass("active");
+        },
+        mouseleave: function () {
+            $(".c-support").removeClass("active");
+        }
+    })
+
+    $(".header-patoge__top-content").slick({
+        slidesToShow: 1, 
+        slidesToScroll: 1, 
+        infinite: false, 
+        dots: false, 
+        arrows: false, 
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear'
     })
     
 
@@ -1201,20 +1221,21 @@
                     } catch (e) {
                         console.error("NÃ£o foi carregar a vitrine - " + e);
                     }
-                    $(".c-vitrine.vitrine-carousel ul li").length <= 4 && $(".c-vitrine.vitrine-carousel").removeClass("vitrine-carousel"),
+                    $(".c-vitrine.vitrine-carousel ul li").length <= 4 && 
+                    $(".c-vitrine.vitrine-carousel").removeClass("vitrine-carousel"),
                         $(".vitrine-carousel ul li").length > 4 &&
                             $(".vitrine-carousel ul").slick({
                                 slidesToShow: 4,
-                                centerMode: true,
-                                slidesToScroll: 1,
+                                // centerMode: true,
+                                slidesToScroll: 4,
                                 dots: !1,
                                 prevArrow: f.left,
                                 nextArrow: f.right,
                                 responsive: [
                                     { breakpoint: 1200, settings: { slidesToShow: 4, slidesToScroll: 4, infinite: !0, dots: !1, arrows: !0, prevArrow: f.left, nextArrow: f.right } },
                                     { breakpoint: 992, settings: { slidesToShow: 3, slidesToScroll: 3, infinite: !0, dots: !1, arrows: !0, prevArrow: f.left, nextArrow: f.right } },
-                                    { breakpoint: 768, settings: { slidesToShow: 1.5,centerMode: true, slidesToScroll: 2, infinite: !0, dots: !1, arrows: !0, prevArrow: f.left, nextArrow: f.right } },
-                                    { breakpoint: 576, settings: { slidesToShow: 1.5,centerMode: true, slidesToScroll: 2, infinite: !0, dots: !1, arrows: !0, prevArrow: f.left, nextArrow: f.right } },
+                                    { breakpoint: 768, settings: { slidesToShow: 1.5,centerMode: true, slidesToScroll: 1.5, infinite: !0, dots: !1, arrows: !0, prevArrow: f.left, nextArrow: f.right } },
+                                    { breakpoint: 576, settings: { slidesToShow: 1.5,centerMode: true, slidesToScroll: 1.5, infinite: !0, dots: !1, arrows: !0, prevArrow: f.left, nextArrow: f.right } },
                                 ],
                             });
                 },

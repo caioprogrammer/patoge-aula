@@ -990,7 +990,7 @@
     line-height: 18px;
     text-transform: uppercase;
     // margin: 0 0 20px;
-    font-weight: 800;
+    font-weight: normal;
     // border-bottom: 1px solid rgba(0,0,0,.2);
     // padding-bottom: 5px
 }
@@ -1634,7 +1634,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 20px;
+    gap: 70px;
 }
 .page-department .c-filters__content-body .search-multiple-navigator h5 {
     cursor: pointer;

@@ -3331,8 +3331,15 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    .slick-list {
+        width: 100%;
+        .slick-track {
+            display: flex;
+        }
+    }
     span {
         font-size: 15px;
+        text-align: center;
     }
 }
 
@@ -3753,7 +3760,7 @@ button {
 @media (min-width: 48em) {
     .header-patoge__menu .c-menu .c-submenu__item {
         border-bottom:1px solid var(--color-white);
-        width: 120px
+        width: 90px;
     }
 }
 
@@ -3781,7 +3788,8 @@ button {
 }
 
 .header-patoge__menu .c-menu .c-submenu__link:hover {
-    opacity: .7
+    opacity: 1;
+    border-bottom: 1px solid;
 }
 
 .header-patoge__menu .c-menuAccount {
@@ -4344,7 +4352,9 @@ button {
 }
 
 .c-footer__content-bottom {
-    margin: 10px 0 20px
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 0 20px;
 }
 
 .c-footer__content-bottom .c-menu {
@@ -4359,6 +4369,7 @@ button {
 .c-footer__content-bottom .c-menu .c-menu__box .c-socials {
     display: flex;
     align-items: center;
+    gap: 30px;
  }
 .c-footer__content-bottom .c-menu .c-socials__link {
     &:last-child {
@@ -4432,8 +4443,12 @@ button {
     font-size: 15px;
     line-height: 22px;
     // text-transform: uppercase;
-    display: flex;
-    align-items: center
+    // display: flex;
+    // align-items: center;
+    border-bottom: 1px solid transparent;
+    &:hover {
+        border-bottom: 1px solid #000000;
+    }
 }
 
 .c-footer__content-bottom .c-menu__box-link i {
@@ -4487,8 +4502,10 @@ button {
 
 @media (min-width: 36em) {
     .c-copy__content {
-        flex-direction:row;
-        justify-content: space-between
+        max-width: 1300px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
     }
 }
 
@@ -4624,6 +4641,10 @@ button {
 // }
 .c-categories {
     margin: 50px 0;
+    background-image: url(https://io2.vtex.com/checkout-ui/v6.85.1/img/loader-inline.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
 }
 .page-home .c-tarja {
     margin-bottom: 0 !important;
@@ -4702,6 +4723,15 @@ button {
         min-width: 420px;
         right: 0;
         top: 50px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 0;
+            background-color: transparent;
+            width: 100%;
+            height: 20px;
+        }
         ul {
             display: flex;
             flex-direction: column;
@@ -4742,6 +4772,15 @@ button {
         min-width: 420px;
         display: none;
         padding: 3rem;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 0;
+            background-color: transparent;
+            width: 100%;
+            height: 20px;
+        }
         
         ul {
             display: flex;
