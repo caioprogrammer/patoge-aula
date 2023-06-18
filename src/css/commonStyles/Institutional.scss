@@ -47,7 +47,8 @@
 
 .page-institutional.page-devolucoes .link-devolucoes,.page-institutional.page-duvidas .link-duvidas,.page-institutional.page-entrega .link-entrega,.page-institutional.page-marca .link-marca,.page-institutional.page-pagamento .link-pagamento,.page-institutional.page-retire .link-retire,.page-institutional.page-seguranca .link-seguranca,.page-institutional.page-termos .link-termos {
     color: var(--color-black)!important;
-    text-decoration: underline
+    text-decoration: underline;
+    font-weight: 700 !important;
 }
 
 .page-institutional .c-institutional {
@@ -126,7 +127,10 @@
     color: var(--color-black);
     font-weight: 600;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
+    @media screen and (max-width:768px) {
+        text-align: center;
+    }
 }
 
 .page-institutional .c-institutional__menu .menu-institucional__link:hover {

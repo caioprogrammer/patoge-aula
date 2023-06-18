@@ -205,13 +205,13 @@
                                         l = a.indexOf("(") - 1;
                                     const d = a.slice(0, l);
                                     let u = `\n            <div class="item ${r}">\n              <div class="icon">\n                <i class="fas fa-truck"></i>\n              </div>\n              <div class="info">\n                <div class="entrega"><strong>${a}</strong></div>\n                <div class="time">\n                  <div class="estimativa">${
-                                            c > 1 ? c + " dias Ãºteis - " : c + " dia Ãºtil - "
-                                        } </div>\n                  <div class="valor">${"R$ 0,00" == s ? "Frete GrÃ¡tis" : s}</div>\n                <div>\n              <div>\n            </div>\n          `,
+                                            c > 1 ? c + " dias úteis - " : c + " dia útil - "
+                                        } </div>\n                  <div class="valor">${"R$ 0,00" == s ? "Frete Grátis" : s}</div>\n                <div>\n              <div>\n            </div>\n          `,
                                         p = `\n            <div class='item ${r}'>\n              <div class='icon'>\n                ${
                                             i.store
                                         }\n              </div>\n              <div class='info'>\n                <div class='entrega'><strong>${d}</strong></div>\n                <div class='time'>\n                  <div class='estimativa'>${
-                                            c > 1 ? c + " dias Ãºteis - " : c + " dia Ãºtil - "
-                                        }</div>\n                  <div class='valor'>${"R$ 0,00" == s ? "Frete GrÃ¡tis" : s}</div>\n                <div>\n              <div>\n            </div>\n          `;
+                                            c > 1 ? c + " dias úteis - " : c + " dia útil - "
+                                        }</div>\n                  <div class='valor'>${"R$ 0,00" == s ? "Frete Grátis" : s}</div>\n                <div>\n              <div>\n            </div>\n          `;
                                     "delivery" == r ? $(u).appendTo(".productCep__content-delivery") : $(p).appendTo(".productCep__content-retire");
                                 });
                         }
@@ -542,9 +542,24 @@
                         },
                         newMenuFuncionality: function () {
                             jQuery( ".page-department .c-filters__content-body .search-multiple-navigator fieldset" ).each(function(index) {
-                                jQuery(this).on("click", function(){
-                                    jQuery(this).find('h5').next().toggleClass('active');
-                                });
+                                if(jQuery(window).width() < 992) {
+                                    jQuery(this).on('click', function () {
+                                        jQuery(this).find('h5').next().toggleClass('active');
+                                    })
+                                } else {
+                                    jQuery(this).on({
+                                        mouseenter: function () {
+                                            jQuery(this).find('h5').next().addClass('active');
+                                            jQuery('.page-department .c-filters__content-body .search-multiple-navigator fieldset div.active').addClass('active')
+                                            // jQuery(this).find('h5').next().slideToggle("fast");
+                                        },
+                                        mouseleave: function () {
+                                            jQuery(this).find('h5').next().removeClass('active');
+                                            jQuery('.page-department .c-filters__content-body .search-multiple-navigator fieldset div.active').removeClass('active')
+                                            // jQuery(this).find('h5').next().slideToggle("fast");
+                                        }
+                                    });
+                                }
                             });
                         },
                         mergeMenu: function () {

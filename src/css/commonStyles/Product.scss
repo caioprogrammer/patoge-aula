@@ -256,19 +256,20 @@
 }
 
 .page-product .c-product__content-top {
-    margin-bottom: 50px
+    margin-bottom: 90px
 }
 
 @media (min-width: 62em) {
     .page-product .c-product__content-top {
         display:grid;
         grid-template-columns: repeat(2,1fr);
-        gap: 30px
+        gap: 50px;
     }
 }
 
 .page-product .c-product__content-description {
-    margin-bottom: 50px
+    // margin-bottom: 50px;
+    margin-top: 90px;
 }
 .page-product .c-product__content-description .productDescription {
     font-family: 'Montserrat';
@@ -1425,9 +1426,11 @@
         font-size: 18px !important;
     }
 }
-.c-product__right-content {
-    position: sticky;
-    top: 100px;
+@media screen and (min-width: 992px) {
+    .c-product__right-content {
+        position: sticky;
+        top: 100px;
+    }
 }
 .page-product .c-product__left-images img.slick-slide {
     margin: 0 10px;

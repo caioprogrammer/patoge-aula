@@ -297,13 +297,13 @@
                                         l = r.indexOf("(") - 1;
                                     const u = r.slice(0, l);
                                     let d = `\n            <div class="item ${s}">\n              <div class="icon">\n                <i class="fas fa-truck"></i>\n              </div>\n              <div class="info">\n                <div class="entrega"><strong>${r}</strong></div>\n                <div class="time">\n                  <div class="estimativa">${
-                                            c > 1 ? c + " dias Ãºteis - " : c + " dia Ãºtil - "
-                                        } </div>\n                  <div class="valor">${"R$ 0,00" == a ? "Frete GrÃ¡tis" : a}</div>\n                <div>\n              <div>\n            </div>\n          `,
+                                            c > 1 ? c + " dias úteis - " : c + " dia útil - "
+                                        } </div>\n                  <div class="valor">${"R$ 0,00" == a ? "Frete Grátis" : a}</div>\n                <div>\n              <div>\n            </div>\n          `,
                                         v = `\n            <div class='item ${s}'>\n              <div class='icon'>\n                ${
                                             o.store
                                         }\n              </div>\n              <div class='info'>\n                <div class='entrega'><strong>${u}</strong></div>\n                <div class='time'>\n                  <div class='estimativa'>${
-                                            c > 1 ? c + " dias Ãºteis - " : c + " dia Ãºtil - "
-                                        }</div>\n                  <div class='valor'>${"R$ 0,00" == a ? "Frete GrÃ¡tis" : a}</div>\n                <div>\n              <div>\n            </div>\n          `;
+                                            c > 1 ? c + " dias úteis - " : c + " dia útil - "
+                                        }</div>\n                  <div class='valor'>${"R$ 0,00" == a ? "Frete Grátis" : a}</div>\n                <div>\n              <div>\n            </div>\n          `;
                                     "delivery" == s ? $(d).appendTo(".productCep__content-delivery") : $(v).appendTo(".productCep__content-retire");
                                 });
                         }
