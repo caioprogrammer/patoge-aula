@@ -45,7 +45,14 @@
     --microtip-text-transform: uppercase
 }
 
-.page-institutional.page-devolucoes .link-devolucoes,.page-institutional.page-duvidas .link-duvidas,.page-institutional.page-entrega .link-entrega,.page-institutional.page-marca .link-marca,.page-institutional.page-pagamento .link-pagamento,.page-institutional.page-retire .link-retire,.page-institutional.page-seguranca .link-seguranca,.page-institutional.page-termos .link-termos {
+.page-institutional.page-devolucoes .link-devolucoes,
+.page-institutional.page-duvidas .link-duvidas,
+.page-institutional.page-entrega .link-entrega,
+.page-institutional.page-marca .link-marca,
+.page-institutional.page-pagamento .link-pagamento,
+.page-institutional.page-retire .link-retire,
+.page-institutional.page-seguranca .link-seguranca,
+.page-institutional.page-termos .link-termos {
     color: var(--color-black)!important;
     text-decoration: underline;
     font-weight: 700 !important;
