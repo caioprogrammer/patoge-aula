@@ -3633,8 +3633,10 @@ PERFORMANCE OF THIS SOFTWARE.
                 }),
                 "" !== i && t.find("#show").after(`<div class="product-image-mobile d-block d-lg-none">\n        <ul id="product-image-mobile-carousel">\n          ${i}\n        </ul>\n      </div>`),
                 $("#product-image-mobile-carousel").slick(
-                    { slidesToShow: 1, 
+                    { 
+                        slidesToShow: 1, 
                         slidesToScroll: 1, 
+                        infinite: false,
                         autoplay: !0, 
                         dots: true,
                         autoplaySpeed: 2e3, 

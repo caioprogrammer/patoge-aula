@@ -77,7 +77,10 @@
 }
 
 .page-institutional .c-institutional__menu {
-    position: relative
+    position: relative;
+    @media screen and (max-width: 768px) {    
+        padding-top: 12px;
+    }
 }
 .page-institutional .c-institutional__menu button#open-options {
     @media screen and (min-width: 768px) {
@@ -91,6 +94,10 @@
     gap: 12px;
     text-transform: uppercase;
     font-weight: 600;
+    color: #000000 !important;
+    &[x-apple-data-detectors] {
+        text-decoration: none !important;
+    }
 }
 
 @media (min-width: 48em) {

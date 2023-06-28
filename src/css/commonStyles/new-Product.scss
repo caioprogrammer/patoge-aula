@@ -261,9 +261,12 @@
 
 @media (min-width: 62em) {
     .page-product .c-product__content-top {
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
+        display:flex;
+        // grid-template-columns: repeat(2,1fr);
         gap: 50px;
+    }
+    .page-product .c-product__left {
+        max-width: 62.5%;
     }
 }
 
@@ -294,7 +297,7 @@
 @media (max-width: 35.99875em) {
     .page-product .c-product__content-description .title {
         font-size:24px;
-        font-size: 1.5rem;
+        font-size: 15px;
         line-height: 34px
     }
 }
@@ -879,7 +882,8 @@
 .page-product .c-product__right-size-quantity {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: flex-start;
+    
 }
 
 @media (min-width: 62em) {
@@ -1137,8 +1141,10 @@
     font-size: 12px;
     font-size: .75rem;
     line-height: 14px;
-    text-decoration: underline;
-    margin-left: 10px
+    margin-left: 10px;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .page-product .c-product__right-delivery .c-info .productCep__form-link.active {
@@ -1287,7 +1293,8 @@
     margin-right: 3px
 }
 
-.page-product .c-product__right-delivery .c-info .productCep__refreshCalc,.page-product .c-product__right-delivery .c-info .productCep__submit-cep {
+.page-product .c-product__right-delivery .c-info .productCep__refreshCalc,
+.page-product .c-product__right-delivery .c-info .productCep__submit-cep {
     margin: 0 auto;
     background: var(--color-white);
     color: var(--color-black);
@@ -1299,9 +1306,14 @@
     text-transform: uppercase;
     font-weight: 600;
     border: 1px solid var(--color-black);
+    transition: ease .3s;
     @media screen and (max-width: 768px) {
         width: 100%;
     }
+}
+.page-product .c-product__right-delivery .c-info .productCep__submit-cep:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 .page-product .c-product__right-delivery .c-info-cep .frete,.page-product .c-product__right-delivery .c-info-cep h3 {

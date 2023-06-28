@@ -52,334 +52,334 @@
     object-fit: contain
 }
 
-.page-department.feminino .c-filters__content-body .search-multiple-navigator {
-    display: grid
-}
+// .page-department.feminino .c-filters__content-body .search-multiple-navigator {
+//     display: grid
+// }
 
-@media (min-width: 48em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator {
-        margin-top:10px;
-        grid-template-areas: "cintura cor" "lavanderia tamanho" "modelagem modelagem";
-        gap: 30px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator {
+//         margin-top:10px;
+//         grid-template-areas: "cintura cor" "lavanderia tamanho" "modelagem modelagem";
+//         gap: 30px
+//     }
+// }
 
-@media (min-width: 62em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator {
-        grid-template-areas:"cintura cor" "lavanderia tamanho" "modelagem modelagem";
-        gap: 20px
-    }
-}
+// @media (min-width: 62em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator {
+//         grid-template-areas:"cintura cor" "lavanderia tamanho" "modelagem modelagem";
+//         gap: 20px
+//     }
+// }
 
-@media (min-width: 75em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator {
-        grid-template-areas:"cintura cor tamanho" "lavanderia modelagem modelagem";
-        gap: 30px
-    }
-}
+// @media (min-width: 75em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator {
+//         grid-template-areas:"cintura cor tamanho" "lavanderia modelagem modelagem";
+//         gap: 30px
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
-        order:3
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+//         order:3
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
-        grid-area:cintura;
-        order: 0;
-        width: 200px
-    }
-}
+// @media (min-width: 48em) {
+//     // .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+//     //     grid-area:cintura;
+//     //     order: 0;
+//     //     width: 200px
+//     // }
+// }
 
-.page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
-        grid-template-columns:1fr;
-        -moz-column-gap: 20px;
-        column-gap: 20px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+//         grid-template-columns:1fr;
+//         -moz-column-gap: 20px;
+//         column-gap: 20px
+//     }
+// }
 
-.page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_genero {
-    grid-area: genero;
-    display: none
-}
+// .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_genero {
+//     grid-area: genero;
+//     display: none
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
-        order:2
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+//         order:2
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
-        grid-area:tamanho;
-        order: 0
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+//         grid-area:tamanho;
+//         order: 0
+//     }
+// }
 
-@media (min-width: 62em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
-        width:300px
-    }
-}
+// @media (min-width: 62em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+//         width:300px
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor {
-        order:1
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor {
+//         order:1
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor {
-        grid-area:cor;
-        order: 0
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor {
+//         grid-area:cor;
+//         order: 0
+//     }
+// }
 
-.page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
-        grid-template-columns:repeat(3,1fr);
-        -moz-column-gap: 20px;
-        column-gap: 20px;
-        row-gap: 10px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+//         grid-template-columns:repeat(3,1fr);
+//         -moz-column-gap: 20px;
+//         column-gap: 20px;
+//         row-gap: 10px
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
-        order:5
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+//         order:5
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
-        grid-area:modelagem;
-        order: 0
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+//         grid-area:modelagem;
+//         order: 0
+//     }
+// }
 
-.page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
-        grid-template-columns:repeat(3,1fr);
-        -moz-column-gap: 20px;
-        column-gap: 20px;
-        row-gap: 10px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+//         grid-template-columns:repeat(3,1fr);
+//         -moz-column-gap: 20px;
+//         column-gap: 20px;
+//         row-gap: 10px
+//     }
+// }
 
-@media (min-width: 62em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
-        grid-template-columns:repeat(4,1fr)
-    }
-}
+// @media (min-width: 62em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+//         grid-template-columns:repeat(4,1fr)
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
-        order:4
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+//         order:4
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
-        grid-area:lavanderia;
-        order: 0;
-        width: 200px
-    }
-}
+// @media (min-width: 48em) {
+    // .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+    //     grid-area:lavanderia;
+    //     order: 0;
+    //     width: 200px
+    // }
+// }
 
-.page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
-        grid-template-columns:1fr;
-        -moz-column-gap: 20px;
-        column-gap: 20px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.feminino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+//         grid-template-columns:1fr;
+//         -moz-column-gap: 20px;
+//         column-gap: 20px
+//     }
+// }
 
-.page-department.masculino .c-filters__content-body .search-multiple-navigator {
-    display: grid
-}
+// .page-department.masculino .c-filters__content-body .search-multiple-navigator {
+//     display: grid
+// }
 
-@media (min-width: 48em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator {
-        margin-top:10px;
-        grid-template-areas: "lavanderia cor" "lavanderia tamanho" "modelagem modelagem";
-        gap: 30px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator {
+//         margin-top:10px;
+//         grid-template-areas: "lavanderia cor" "lavanderia tamanho" "modelagem modelagem";
+//         gap: 30px
+//     }
+// }
 
-@media (min-width: 62em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator {
-        grid-template-areas:"lavanderia cor" "lavanderia tamanho" "modelagem modelagem";
-        gap: 20px
-    }
-}
+// @media (min-width: 62em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator {
+//         grid-template-areas:"lavanderia cor" "lavanderia tamanho" "modelagem modelagem";
+//         gap: 20px
+//     }
+// }
 
-@media (min-width: 75em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator {
-        grid-template-areas:"lavanderia cor" "tamanho modelagem";
-        gap: 30px
-    }
-}
+// @media (min-width: 75em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator {
+//         grid-template-areas:"lavanderia cor" "tamanho modelagem";
+//         gap: 30px
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
-        order:3
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+//         order:3
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
-        grid-area:cintura;
-        order: 0;
-        width: 200px
-    }
-}
+// @media (min-width: 48em) {
+    // .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+    //     grid-area:cintura;
+    //     order: 0;
+    //     width: 200px
+    // }
+// }
 
-.page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
-        grid-template-columns:1fr;
-        -moz-column-gap: 20px;
-        column-gap: 20px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+//         grid-template-columns:1fr;
+//         -moz-column-gap: 20px;
+//         column-gap: 20px
+//     }
+// }
 
-.page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_genero {
-    grid-area: genero;
-    display: none
-}
+// .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_genero {
+//     grid-area: genero;
+//     display: none
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
-        order:2
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+//         order:2
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
-        grid-area:tamanho;
-        order: 0
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+//         grid-area:tamanho;
+//         order: 0
+//     }
+// }
 
-@media (min-width: 62em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
-        width:300px
-    }
-}
+// @media (min-width: 62em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+//         width:300px
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor {
-        order:1
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor {
+//         order:1
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor {
-        grid-area:cor;
-        order: 0
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor {
+//         grid-area:cor;
+//         order: 0
+//     }
+// }
 
-.page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
-        grid-template-columns:repeat(3,1fr);
-        -moz-column-gap: 20px;
-        column-gap: 20px;
-        row-gap: 10px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+//         grid-template-columns:repeat(3,1fr);
+//         -moz-column-gap: 20px;
+//         column-gap: 20px;
+//         row-gap: 10px
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
-        order:5
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+//         order:5
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
-        grid-area:modelagem;
-        order: 0
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+//         grid-area:modelagem;
+//         order: 0
+//     }
+// }
 
-.page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
-        -moz-column-gap:20px;
-        column-gap: 20px;
-        row-gap: 10px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+//         -moz-column-gap:20px;
+//         column-gap: 20px;
+//         row-gap: 10px
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
-        order:4
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+//         order:4
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
-        grid-area:lavanderia;
-        order: 0;
-        width: 200px
-    }
-}
+// @media (min-width: 48em) {
+    // .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+    //     grid-area:lavanderia;
+    //     order: 0;
+    //     width: 200px
+    // }
+// }
 
-.page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
-        grid-template-columns:1fr;
-        -moz-column-gap: 20px;
-        column-gap: 20px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.masculino .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+//         grid-template-columns:1fr;
+//         -moz-column-gap: 20px;
+//         column-gap: 20px
+//     }
+// }
 
 // .page-department.sale .c-filters__content-body .search-multiple-navigator {
 //     display: grid
@@ -407,373 +407,373 @@
 //     }
 // }
 
-@media (max-width: 47.99875em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura {
-        order:3
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+//         order:3
+//     }
+// }
 
-@media (min-width: 48em) {
+// @media (min-width: 48em) {
     // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura {
     //     grid-area:cintura;
     //     order: 0
     // }
-}
+// }
 
-@media (min-width: 62em) {
+// @media (min-width: 62em) {
     // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura {
     //     width:200px
     // }
-}
+// }
 
-.page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
-        grid-template-columns:1fr;
-        -moz-column-gap: 20px;
-        column-gap: 20px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+//         grid-template-columns:1fr;
+//         -moz-column-gap: 20px;
+//         column-gap: 20px
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero {
-        order:1
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero {
+//         order:1
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero {
-        grid-area:genero;
-        order: 0
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero {
+//         grid-area:genero;
+//         order: 0
+//     }
+// }
 
-@media (min-width: 62em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero {
-        width:200px
-    }
-}
+// @media (min-width: 62em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero {
+//         width:200px
+//     }
+// }
 
-.page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero div {
-        grid-template-columns:1fr;
-        -moz-column-gap: 20px;
-        column-gap: 20px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_genero div {
+//         grid-template-columns:1fr;
+//         -moz-column-gap: 20px;
+//         column-gap: 20px
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
-        order:2
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+//         order:2
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
-        grid-area:tamanho;
-        order: 0
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+//         grid-area:tamanho;
+//         order: 0
+//     }
+// }
 
-@media (min-width: 62em) {
+// @media (min-width: 62em) {
     // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
     //     width:300px
     // }
-}
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor {
-        order:1
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor {
+//         order:1
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor {
-        grid-area:cor;
-        order: 0
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor {
+//         grid-area:cor;
+//         order: 0
+//     }
+// }
 
-.page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor div {
-        -moz-column-gap:20px;
-        column-gap: 20px;
-        row-gap: 10px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+//         -moz-column-gap:20px;
+//         column-gap: 20px;
+//         row-gap: 10px
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
-        order:5
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+//         order:5
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
-        grid-area:modelagem;
-        order: 0
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+//         grid-area:modelagem;
+//         order: 0
+//     }
+// }
 
-.page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
-        grid-template-columns:repeat(3,1fr);
-        -moz-column-gap: 20px;
-        column-gap: 20px;
-        row-gap: 10px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+//         grid-template-columns:repeat(3,1fr);
+//         -moz-column-gap: 20px;
+//         column-gap: 20px;
+//         row-gap: 10px
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
-    //     order:4
+// @media (max-width: 47.99875em) {
+//     // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+//     //     order:4
+//     // }
+// }
+
+// @media (min-width: 48em) {
+//     // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+//     //     grid-area:lavanderia;
+//     //     order: 0
+//     // }
+// }
+
+// @media (min-width: 62em) {
+//     // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+//     //     width:200px
+//     // }
+// }
+
+// .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
+
+// @media (min-width: 48em) {
+//     .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+//         grid-template-columns:1fr;
+//         -moz-column-gap: 20px;
+//         column-gap: 20px
+//     }
+// }
+
+// .page-department.page-denim-days .c-filters__content-body .search-single-navigator {
+//     display: grid!important
+// }
+
+// @media (min-width: 48em) {
+//     .page-department.page-denim-days .c-filters__content-body .search-single-navigator {
+//         grid-template-columns:repeat(3,1fr);
+//         -moz-column-gap: 60px;
+//         column-gap: 60px
+//     }
+// }
+
+// .page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
+//     display: grid
+// }
+
+// @media (min-width: 48em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
+//         margin-top:10px;
+//         grid-template-areas: "lavanderia cor" "genero tamanho" "cintura modelagem";
+//         gap: 30px
+//     }
+// }
+
+// @media (min-width: 62em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
+//         grid-template-areas:"lavanderia cor" "genero tamanho" "cintura modelagem";
+//         gap: 20px
+//     }
+// }
+
+// @media (min-width: 75em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
+//         grid-template-areas:"lavanderia cintura cor" "genero tamanho modelagem";
+//         gap: 30px
+//     }
+// }
+
+// @media (max-width: 47.99875em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+//         order:4
+//     }
+// }
+
+// @media (min-width: 48em) {
+    // .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura {
+    //     grid-area:cintura;
+    //     order: 0;
+    //     width: 200px
     // }
-}
+// }
 
-@media (min-width: 48em) {
-    // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
-    //     grid-area:lavanderia;
-    //     order: 0
-    // }
-}
+// .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 62em) {
-    // .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
-    //     width:200px
-    // }
-}
+// @media (min-width: 48em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
+//         grid-template-columns:1fr;
+//         -moz-column-gap: 20px;
+//         column-gap: 20px
+//     }
+// }
 
-.page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero {
+//         order:1
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.sale .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
-        grid-template-columns:1fr;
-        -moz-column-gap: 20px;
-        column-gap: 20px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero {
+//         grid-area:genero;
+//         order: 0
+//     }
+// }
 
-.page-department.page-denim-days .c-filters__content-body .search-single-navigator {
-    display: grid!important
-}
+// .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department.page-denim-days .c-filters__content-body .search-single-navigator {
-        grid-template-columns:repeat(3,1fr);
-        -moz-column-gap: 60px;
-        column-gap: 60px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero div {
+//         grid-template-columns:1fr;
+//         -moz-column-gap: 20px;
+//         column-gap: 20px
+//     }
+// }
 
-.page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
-    display: grid
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_tamanho,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+//         order:2
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
-        margin-top:10px;
-        grid-template-areas: "lavanderia cor" "genero tamanho" "cintura modelagem";
-        gap: 30px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_tamanho,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+//         grid-area:tamanho;
+//         order: 0
+//     }
+// }
 
-@media (min-width: 62em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
-        grid-template-areas:"lavanderia cor" "genero tamanho" "cintura modelagem";
-        gap: 20px
-    }
-}
+// @media (min-width: 62em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_tamanho,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
+//         width:300px
+//     }
+// }
 
-@media (min-width: 75em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator,.page-department.inverno .c-filters__content-body .search-multiple-navigator {
-        grid-template-areas:"lavanderia cintura cor" "genero tamanho modelagem";
-        gap: 30px
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor {
+//         order:3
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura {
-        order:4
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor {
+//         grid-area:cor;
+//         order: 0
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura {
-        grid-area:cintura;
-        order: 0;
-        width: 200px
-    }
-}
+// .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-.page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// @media (min-width: 48em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor div {
+//         grid-template-columns:repeat(3,1fr);
+//         -moz-column-gap: 20px;
+//         column-gap: 20px;
+//         row-gap: 10px
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cintura div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cintura div {
-        grid-template-columns:1fr;
-        -moz-column-gap: 20px;
-        column-gap: 20px
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+//         order:6
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero {
-        order:1
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
+//         grid-area:modelagem;
+//         order: 0
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero {
-        grid-area:genero;
-        order: 0
-    }
-}
+// .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-.page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// @media (min-width: 48em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
+//         -moz-column-gap:20px;
+//         column-gap: 20px;
+//         row-gap: 10px
+//     }
+// }
 
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_genero div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_genero div {
-        grid-template-columns:1fr;
-        -moz-column-gap: 20px;
-        column-gap: 20px
-    }
-}
+// @media (max-width: 47.99875em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+//         order:4
+//     }
+// }
 
-@media (max-width: 47.99875em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_tamanho,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
-        order:2
-    }
-}
+// @media (min-width: 48em) {
+//     // .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
+//     //     grid-area:lavanderia;
+//     //     order: 0;
+//     //     width: 200px
+//     // }
+// }
 
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_tamanho,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
-        grid-area:tamanho;
-        order: 0
-    }
-}
+// .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 62em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_tamanho,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_tamanho {
-        width:300px
-    }
-}
-
-@media (max-width: 47.99875em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor {
-        order:3
-    }
-}
-
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor {
-        grid-area:cor;
-        order: 0
-    }
-}
-
-.page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
-
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_cor div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_cor div {
-        grid-template-columns:repeat(3,1fr);
-        -moz-column-gap: 20px;
-        column-gap: 20px;
-        row-gap: 10px
-    }
-}
-
-@media (max-width: 47.99875em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
-        order:6
-    }
-}
-
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem {
-        grid-area:modelagem;
-        order: 0
-    }
-}
-
-.page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
-
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_modelagem div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_modelagem div {
-        -moz-column-gap:20px;
-        column-gap: 20px;
-        row-gap: 10px
-    }
-}
-
-@media (max-width: 47.99875em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
-        order:4
-    }
-}
-
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia {
-        grid-area:lavanderia;
-        order: 0;
-        width: 200px
-    }
-}
-
-.page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
-
-@media (min-width: 48em) {
-    .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
-        grid-template-columns:1fr;
-        -moz-column-gap: 20px;
-        column-gap: 20px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department.curvy .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div,.page-department.inverno .c-filters__content-body .search-multiple-navigator .filtro_lavanderia div {
+//         grid-template-columns:1fr;
+//         -moz-column-gap: 20px;
+//         column-gap: 20px
+//     }
+// }
 
 @media (max-width: 47.99875em) {
     .page-department .c-breadcrumb ul {
@@ -1115,7 +1115,7 @@
 
 .page-department .c-filters__content-body .search-multiple-navigator fieldset div.active {
     z-index: 9;
-    max-height: 60vh;
+    max-height: 90vh;
     height: auto;
     display: flex;
     @media screen and (max-width: 768px) {
@@ -1227,7 +1227,7 @@
 
 @media (min-width: 62em) {
     .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_tamanho div label {
-        width:40px;
+        width: 60px;
         height: 30px
     }
 }
@@ -1330,19 +1330,19 @@
     // }
 }
 
-.page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cintura div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px
-}
+// .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cintura div {
+//     display: grid;
+//     grid-template-columns: repeat(2,1fr);
+//     gap: 10px
+// }
 
-@media (min-width: 48em) {
-    .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cintura div {
-        grid-template-columns:1fr;
-        -moz-column-gap: 20px;
-        column-gap: 20px
-    }
-}
+// @media (min-width: 48em) {
+//     .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_cintura div {
+//         grid-template-columns:1fr;
+//         -moz-column-gap: 20px;
+//         column-gap: 20px
+//     }
+// }
 
 @media (max-width: 47.99875em) {
     .page-department .c-filters__content-body .search-multiple-navigator fieldset.filtro_genero {
@@ -1704,7 +1704,7 @@
     justify-content: center;
     gap: 50px;
     @media screen and (max-width: 992px) {
-        gap: 24px;
+        gap: 30px;
         flex-direction: column;
     }
 }

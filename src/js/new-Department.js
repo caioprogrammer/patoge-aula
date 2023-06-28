@@ -94,7 +94,17 @@
         $(function () {
             const e = {
                 init: function () {
-                    e.departmentClass(), e.iconBreadcrumb(), e.icons(), e.listShelf(), e.removeHelperComplement(), e.openFilter(), e.closeFilter(), e.orderBy(), e.openSelectOrder(), e.createAppliedFilters(), e.smartResearch();
+                    e.departmentClass(), 
+                    e.iconBreadcrumb(), 
+                    e.icons(), 
+                    e.listShelf(), 
+                    e.removeHelperComplement(), 
+                    e.openFilter(), 
+                    e.closeFilter(),
+                    e.orderBy(), 
+                    e.openSelectOrder(), 
+                    e.createAppliedFilters(), 
+                    e.smartResearch();
                 },
                 departmentClass: function () {
                     const e = $(".c-breadcrumb .last a").text();

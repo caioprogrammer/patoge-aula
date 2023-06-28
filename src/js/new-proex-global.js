@@ -550,12 +550,12 @@
                                     jQuery(this).on({
                                         mouseenter: function () {
                                             jQuery(this).find('h5').next().addClass('active');
-                                            jQuery('.page-department .c-filters__content-body .search-multiple-navigator fieldset div.active').addClass('active')
+                                            // jQuery('.page-department .c-filters__content-body .search-multiple-navigator fieldset div.active').addClass('active')
                                             // jQuery(this).find('h5').next().slideToggle("fast");
                                         },
                                         mouseleave: function () {
                                             jQuery(this).find('h5').next().removeClass('active');
-                                            jQuery('.page-department .c-filters__content-body .search-multiple-navigator fieldset div.active').removeClass('active')
+                                            // jQuery('.page-department .c-filters__content-body .search-multiple-navigator fieldset div.active').removeClass('active')
                                             // jQuery(this).find('h5').next().slideToggle("fast");
                                         }
                                     });
@@ -760,7 +760,13 @@
                     new o.a($(".c-minicart__footer-delivery"));
                     const e = {
                         init: function () {
-                            e.icons(), e.navigation(), e.openMenu(), e.closeMenu(), e.openMinicart(), e.closeMinicart(), e.verifyLogin(), e.searchAutocomplete();
+                            e.icons(), 
+                            e.navigation(),
+                            e.openMenuLateral(),
+                            e.closeMenuLateral(),
+                            e.openMenu(), 
+                            e.closeMenu(), 
+                            e.openMinicart(), e.closeMinicart(), e.verifyLogin(), e.searchAutocomplete();
                         },
                         icons: function () {
                             $(".c-minicart__header-links .close").prepend(a.sacola), $(".c-minicart__empty span").prepend(a.bag), $(".header-patoge__top .c-search, .header-patoge__bottom .c-search").append(a.search);
@@ -844,14 +850,28 @@
                                 $(".js-menu").removeClass("active"), $(".mask").removeClass("active");
                             });
                         },
+                        openMenuLateral: function () {
+                            $(".header-patoge .js-menuMobile").click(function () {
+                                $("html").attr("style", "overflow-y: hidden;");
+                            });
+                        },
+                        closeMenuLateral: function () {
+                            $(".header-patoge .js-btnClose").click(function () {
+                                $("html").removeAttr("style");
+                            });
+                            
+                        },
                         openMinicart: function () {
                             $(".header-patoge .c-menucart").click(function () {
-                                $(".c-minicart").addClass("open"), $(".c-minicart__overlay").addClass("open"), $("body").attr("style", "overflow-y: hidden;");
+                                $(".c-minicart").addClass("open"), $(".c-minicart__overlay").addClass("open"), 
+                                $("body").attr("style", "overflow-y: hidden;");
                             });
                         },
                         closeMinicart: function () {
                             $(".c-minicart .close").click(function () {
-                                $(".c-minicart").removeClass("open"), $(".c-minicart__overlay").removeClass("open"), $("body").removeAttr("style");
+                                $(".c-minicart").removeClass("open"), 
+                                $(".c-minicart__overlay").removeClass("open"), 
+                                $("body").removeAttr("style");
                             });
                         },
                         verifyLogin: function () {

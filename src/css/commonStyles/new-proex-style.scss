@@ -101,8 +101,8 @@
 
 .c-vitrine.visited-products .vitrine ul .icon-arrow-left,
 .c-vitrine.visited-products .vitrine ul .icon-arrow-right {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -110,11 +110,11 @@
 }
 
 .c-vitrine.visited-products .vitrine ul .icon-arrow-left {
-  left: 0;
+  left: -15px;
 }
 
 .c-vitrine.visited-products .vitrine ul .icon-arrow-right {
-  right: 0;
+  right: -15px;
 }
 
 .c-vitrine.visited-products ul.slick-slider {
@@ -148,7 +148,7 @@
 }
 
 .header-patoge.fixed .header-icons {
-  width: 105px;
+  // width: 105px;
 }
 
 #busca-vazia-page #busca-vazia-content .busca-vazia-texto {
@@ -253,12 +253,18 @@ body #blip-chat-container {
     letter-spacing: 2px;
     font-weight: 700;
     width: 180px;
-    border: 0;
     margin: auto;
     display: block;
     height: 40px;
     padding: 0;
     border-radius: 0;
+    border: 1px solid transparent;
+    transition: ease .3s all;
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      border: 1px solid #000000;
+    }
   }
 }
 #scrollLoading {
@@ -416,7 +422,7 @@ body #blip-chat-container {
     overflow: auto;
   }
 
-  .header-patoge.fixed .header-patoge__bottom .c-search {
+  .header-patoge.fixed .header-icons .c-search-icon{
     display: none;
   }
 
