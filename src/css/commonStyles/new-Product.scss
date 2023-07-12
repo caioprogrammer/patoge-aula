@@ -516,7 +516,19 @@
 }
 
 .page-product .c-product__right-price {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    position: relative;
+}
+.page-product .c-product__right-price .discount-flag {
+    position: absolute;
+    top: 5px;
+    left: 65%;
+    background: #ED6161;
+    padding: 0 5px;
+    color: #ffffff;
+    @media screen and (max-width: 992px) {
+        left: 75%;
+    }
 }
 
 @media (max-width: 61.99875em) {
@@ -540,7 +552,7 @@
 }
 
 .page-product .c-product__right-price .valor-de {
-    font-size: 0;
+    font-size: 14px;
     line-height: 2px;
     float: left;
     margin-right: 10px;
@@ -558,7 +570,7 @@
 }
 
 .page-product .c-product__right-price .valor-por {
-    font-size: 0;
+    font-size: 14px;
     line-height: 2px;
     margin-left: -2px
 }

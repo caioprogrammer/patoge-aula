@@ -3,8 +3,10 @@
 
     console.log("<><><><><>FUNFOU<><><><><>")
 
-    document.querySelectorAll(".c-menu__box-title")[0, 1].addEventListener(("click"), (e) => {
-        e.target.classList.toggle("active")
+    document.querySelectorAll(".c-menu__box-title").forEach((title) => {
+        title.addEventListener(("click"), (e) => {
+            e.target.classList.toggle("active")
+        })
     })
 
     $(".page-institutional .c-institutional__menu button#open-options").on("click", function() {
