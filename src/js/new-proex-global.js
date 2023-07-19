@@ -12,18 +12,19 @@
     $(".page-institutional .c-institutional__menu button#open-options").on("click", function() {
         $(".page-institutional .c-institutional__menu .menu-institucional ul").toggleClass("active");
     })
-
+    $(".c-categories__content").addClass("active")
     $(".c-categories__buttons button#masculino").on("click", function() {
         $(".c-categories__buttons button#masculino").addClass("active");
         $(".c-categories__buttons button#feminino").removeClass("active");
-        $(".c-categories__content").show()
-        $(".c-categories__content--2").hide()
+
+        $(".c-categories__content").removeClass("active")
+        $(".c-categories__content--2").addClass("active")
     });
     $(".c-categories__buttons button#feminino").on("click", function() {
         $(".c-categories__buttons button#masculino").removeClass("active");
         $(".c-categories__buttons button#feminino").addClass("active");
-        $(".c-categories__content").hide()
-        $(".c-categories__content--2").show()
+        $(".c-categories__content").addClass("active")
+        $(".c-categories__content--2").removeClass("active")
     });
 
     $(".c-person, .c-person.modal-body").on({

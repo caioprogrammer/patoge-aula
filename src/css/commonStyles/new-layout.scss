@@ -4726,7 +4726,27 @@ button {
 .page-home .c-tarja {
     margin-bottom: 0 !important;
 }
-.c-categories__content, .c-categories__content--2 {
+.c-categories__content {
+    height: 0;
+    pointer-events: none;
+    opacity: 0;
+    &.active {
+        height: auto;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    &--2 {
+    height: 0;
+    pointer-events: none;
+    opacity: 0;
+        &.active {
+            height: auto;
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+}
+.c-categories__content.active, .c-categories__content--2.active {
     min-height: 327px;
     @media screen and (max-width:768px) {
         min-height: auto;
@@ -4743,9 +4763,11 @@ button {
     // min-width: 480px;
     outline: 0;
 }
-.categories-carousel .c-categories__content--2 {
-    display: none;
-}
+// .categories-carousel .c-categories__content--2 {
+//     display: none;
+// }
+
+
 
 .c-categories__buttons {
     display: flex;
