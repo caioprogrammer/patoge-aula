@@ -4116,17 +4116,17 @@ button {
     width: 60px;
     height: 60px;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 110px;
+    right: 35px;
     background-color: #0fbd69;
     border-radius: 30px;
-    z-index: 9999999
+    z-index: 9999999;
 }
 
 @media (max-width: 35.99875em) {
     .c-whats__content {
-        right:15px;
-        bottom: 15px
+        right: 15px;
+        bottom: 70px
     }
 }
 

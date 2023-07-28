@@ -12,19 +12,18 @@
     $(".page-institutional .c-institutional__menu button#open-options").on("click", function() {
         $(".page-institutional .c-institutional__menu .menu-institucional ul").toggleClass("active");
     })
-    $(".c-categories__content").addClass("active")
+
     $(".c-categories__buttons button#masculino").on("click", function() {
         $(".c-categories__buttons button#masculino").addClass("active");
         $(".c-categories__buttons button#feminino").removeClass("active");
-
-        $(".c-categories__content").removeClass("active")
-        $(".c-categories__content--2").addClass("active")
+        $(".c-categories__content").removeClass("active");
+        $(".c-categories__content--2").addClass("active");
     });
     $(".c-categories__buttons button#feminino").on("click", function() {
         $(".c-categories__buttons button#masculino").removeClass("active");
         $(".c-categories__buttons button#feminino").addClass("active");
         $(".c-categories__content").addClass("active")
-        $(".c-categories__content--2").removeClass("active")
+        $(".c-categories__content--2").removeClass("active");
     });
 
     $(".c-person, .c-person.modal-body").on({
@@ -55,6 +54,7 @@
         fade: true,
         cssEase: 'linear'
     })
+
     
 
 
@@ -504,8 +504,8 @@
                         })();
                     if (((f = _ = null !== s.searchUrl ? s.searchUrl : w()), i.length < 1))
                         return a("Nenhuma opÃ§Ã£o de filtro encontrada", "Aviso"), s.showLinks && jQuery(s.linksMenu).css("visibility", "visible").show(), s.infinitScroll ? j(M) : T(M), k(), i;
-                    if ($.length < 1) return a("Elemento para destino da requisiÃ§Ã£o nÃ£o foi encontrado \n (" + $.selector + ")"), !1;
-                    C.length < 1 && a("O menu de filtros nÃ£o foi encontrado \n (" + C.selector + ")");
+                    if ($.length < 1) return a("Elemento para destino da requisição não foi encontrado \n (" + $.selector + ")"), !1;
+                    C.length < 1 && a("O menu de filtros não foi encontrado \n (" + C.selector + ")");
                     e.location.href;
                     var F = jQuery(s.linksMenu),
                         q = jQuery('<div class="vtexSr-overlay"></div>'),
@@ -518,9 +518,9 @@
                     var D = {
                         exec: function () {
                             D.setFilterMenu(),
-                                D.fieldsetFormat(),
-                                D.newMenuFuncionality(),
-                                i.each(function () {
+                            D.fieldsetFormat(),
+                            D.newMenuFuncionality(),
+                            i.each(function () {
                                     var e = jQuery(this),
                                         t = e.parent();
                                     e.is(":checked") && ((h += "&" + (e.attr("rel") || "")), t.addClass("sr_selected")),
@@ -544,6 +544,7 @@
                                 S("vsr-complete");
                         },
                         newMenuFuncionality: function () {
+                            console.log('<><><>FILTROS COMEÇO<><><>')
                             jQuery( ".page-department .c-filters__content-body .search-multiple-navigator fieldset" ).each(function(index) {
                                 if(jQuery(window).width() < 992) {
                                     jQuery(this).on('click', function () {
@@ -553,17 +554,14 @@
                                     jQuery(this).on({
                                         mouseenter: function () {
                                             jQuery(this).find('h5').next().addClass('active');
-                                            // jQuery('.page-department .c-filters__content-body .search-multiple-navigator fieldset div.active').addClass('active')
-                                            // jQuery(this).find('h5').next().slideToggle("fast");
                                         },
                                         mouseleave: function () {
                                             jQuery(this).find('h5').next().removeClass('active');
-                                            // jQuery('.page-department .c-filters__content-body .search-multiple-navigator fieldset div.active').removeClass('active')
-                                            // jQuery(this).find('h5').next().slideToggle("fast");
                                         }
                                     });
                                 }
                             });
+                            console.log('<><><>FILTROS FINAL<><><>')
                         },
                         mergeMenu: function () {
                             if (!s.mergeMenu) return !1;
@@ -724,6 +722,7 @@
                         },
                     };
                     v.hasClass("page-department") ? D.mergeMenu() : (v.hasClass("page-category") || v.hasClass("page-search")) && D.mergeMenuList(), D.exec(), s.infinitScroll ? j(M) : T(M), k(), s.callback(), C.css("visibility", "visible");
+                    
                 });
         })(document, window, jQuery);
     },
@@ -769,7 +768,10 @@
                             e.closeMenuLateral(),
                             e.openMenu(), 
                             e.closeMenu(), 
-                            e.openMinicart(), e.closeMinicart(), e.verifyLogin(), e.searchAutocomplete();
+                            e.openMinicart(), 
+                            e.closeMinicart(), 
+                            e.verifyLogin(), 
+                            e.searchAutocomplete();
                         },
                         icons: function () {
                             $(".c-minicart__header-links .close").prepend(a.sacola), $(".c-minicart__empty span").prepend(a.bag), $(".header-patoge__top .c-search, .header-patoge__bottom .c-search").append(a.search);
@@ -1073,7 +1075,7 @@
                         .replace(/(-\d{2})(\d)/, "$1-$2")
                         .replace(/(-\d{4})\d+?$/, "$1"),
             };
-            document.querySelectorAll("input").forEach((e) => {
+            document.querySelectorAll("body:not(.page-department) input").forEach((e) => {
                 const t = e.dataset.type;
                 e.addEventListener(
                     "input",
